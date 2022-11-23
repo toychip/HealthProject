@@ -1,0 +1,30 @@
+@import "start.css";
+@import "master-main.css";
+@import "signin.css";
+@import "signup.css";
+@import "community.css";
+@import "screen-header.css";
+@import "first-row.css";
+@import "workout-eachpart.css";
+@import "routine.css";
+@import "rank.css";
+@import "mypage.css";
+@import "make-routine.css";
+@import "record-common.css";
+@import "mypage-correct.css";
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    height: 100vh;
+
+}

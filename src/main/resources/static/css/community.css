@@ -1,0 +1,211 @@
+.btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: none;
+}
+
+.community-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.community-btns button{
+    margin: 0px 3px;
+    
+}
+
+
+.community-title,
+.community-search,
+.community-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+.community-title h3{
+    font-size: 35px;
+    color: #333333;
+    font-weight: 600;
+    align-items: center;
+ 
+}
+
+.community-search{
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    align-items: center;
+}
+
+
+.community-search-wrap input{
+    width: 450px;
+    height: 40px;
+}
+
+
+
+.btn-search select {
+    height: 40px;
+    width: 100px;
+}
+
+
+
+
+tbody a{
+    position: relative;
+    left:-70px;
+
+  
+}
+
+.community-info td{
+    position: relative;
+    left:30px;
+
+
+}
+.community-info td:first-child{
+    position: relative;
+    left:-25px;
+
+
+}
+
+.center{
+
+    justify-content: center;
+   margin-top: 0px;
+}
+
+.write{
+    display: flex;
+    justify-content: right;
+    position: relative;
+
+    top: 10px;
+
+}
+
+.write-select{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.write-select select {
+
+    width: 1500px;
+    height:40px;
+}
+.write-date{
+    display: flex;
+    justify-content: center;
+   
+}
+.write-date input{
+    width: 1500px;
+
+}
+.write-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+.write-title input{
+    width: 1500px;
+
+}
+.write-info{
+    display: flex;
+    justify-content: center;
+   
+}
+.write-info textarea{
+    width: 1500px;
+    height: 500px;
+}
+.write-inbody{
+    display: flex;
+    justify-content: center;
+   
+}
+.write-inbody input{
+    width: 1500px;
+}
+.write-submit{
+    display: flex;
+    justify-content: right;
+    margin-top: -20px;
+  
+}
+.dd{
+    display: flex;
+    justify-content: center;
+    width: 1297px;
+    height: 50px;
+}
+
+.write-file{
+
+position: relative;
+bottom: -10px;
+left:3px;
+}
+ 
+
+
+/* community-view */
+.view-title{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    font-size: 50px;
+}
+
+.view-info{
+    margin: 30px 0px;
+    font-size: 26px;
+    font-weight: 500;
+    width: 80%;
+}
+.view-a{
+    font-size: 18px;
+    margin: 0px 5px;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.list-order{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,58 @@
+.workout-eachpart{
+    padding: 55px;
+}
+.workout-title{
+    position: relative;
+    left:280px;
+    margin-bottom: 25px;
+    width: 66%;
+
+    
+
+}
+.workout-title h3{
+    font-weight: 600;
+    font-size: 35px;
+    background-color: rgba(0,0,0,0.05);
+    width: ;
+
+}
+
+.workout-video{
+    display: flex;
+    justify-content: center;
+}
+.workout-video img{
+    margin-right: 50px;
+}
+
+.workout-methods {
+    margin-top:30px;
+    margin-bottom: 120px;
+    background-color: rgba(0,0,0,0.05);
+    margin-left:275px;
+    margin-right:325px;
+
+ 
+
+}
+.workout-methods div{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+ 
+
+}
+.workout-methods button{
+    border-radius: 40%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.workout-methods p{
+    margin-top: 20px;
+}
+
+
+.muscle-area h2{
+    font-weight: 600;
+}

@@ -1,0 +1,10 @@
+.first-row{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.muscle-area h2{
+    margin-top: 40px;
+    margin-left: -270px;
+}

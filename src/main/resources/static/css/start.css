@@ -1,0 +1,77 @@
+
+    #introWrap {
+        background: url("https://photo.coolenjoy.co.kr/data/editor/2204/c304745b665f46824624641636edaaeca2a46a81.png")  center top repeat;
+        overflow: inherit;
+        height: 100%;
+    }
+    #introWrap .inner {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    #introWrap .intro-text {
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 60px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    #introWrap .intro-text span{
+        font-weight: 600;
+        font-size: 30px;
+        opacity: 0.6;
+    }
+    #introWrap .logo {
+        margin: 40px 0 80px;
+        text-align: center;
+    }
+    .wbr {
+        display: block;
+    }
+    .link-btn {
+        text-align: center;
+        margin-top: 150px;
+    }
+    .link-btn ul {
+        display: table;
+        margin: 0 auto;
+    }
+    .link-btn ul li {
+        display: table-cell;
+        margin: 0 15px;
+        vertical-align: middle;
+        padding-top: 20px ;
+        padding: 0px 200px;
+
+
+     
+    }
+    .link-btn ul li a {
+        width: 180px;
+        height: 180px;
+        color: black;
+        font-weight: 600;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 22px;
+        line-height: 1.6;
+        box-sizing: border-box;
+        letter-spacing: -1px;
+        transition: ease all .3s;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .link-btn ul li a.link02 {
+        background-color: tomato;
+        opacity: 0.8;
+    }
+    
+    .link-btn ul li a.link05 {
+        background-color: violet;
+        opacity: 0.8;
+    }
+   
+    .logo h1{
+        padding: 30px;
+    }

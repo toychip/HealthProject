@@ -1,0 +1,23 @@
+.rank-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    margin-left: 100px;
+}
+
+.rank-btns button{
+    width: 300px;
+}
+
+.rank-challenge span{
+    color: black;
+  position: relative;
+  left:240px;
+
+}
+.rank-challenge span:hover{
+    color: blue;
+}
+
+

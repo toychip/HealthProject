@@ -1,13 +1,24 @@
 .screen-header{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    z-index: 99999;
 
   
 }
+.bg-lights {
+    /* --bs-bg-opacity: 1; */
+    background-color: rgba(var(--bs-light-rgb));
+    color:black;
+}
 
 .navbars {
-    position: relative;
+
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -43,4 +54,8 @@
 
 a{
     font-size: 20px;
+}
+
+body{
+    padding-top: 75px;
 }

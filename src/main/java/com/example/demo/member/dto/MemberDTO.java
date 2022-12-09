@@ -16,6 +16,12 @@ public class MemberDTO {
     private String nickname;
     private int userage;
     private String sex;
+    private int benchpress;
+    private int deadlift;
+    private int squat;
+    private int bigthree;
+    private String tiername;
+
 
     public static MemberDTO toMemberDTO(MemberEntity memberEntity) {
         MemberDTO memberDTO = new MemberDTO();
@@ -25,7 +31,11 @@ public class MemberDTO {
         memberDTO.setNickname(memberEntity.getNickname());
         memberDTO.setUserage(memberEntity.getUserage());
         memberDTO.setSex(memberEntity.getSex());
-
+        memberDTO.setBenchpress(memberEntity.getBenchpress());
+        memberDTO.setDeadlift(memberEntity.getDeadlift());
+        memberDTO.setSquat(memberEntity.getSquat());
+        memberDTO.setBigthree(memberEntity.getBigthree());
+        memberDTO.setTiername(memberEntity.getTiername());
         return memberDTO;
     }
 }

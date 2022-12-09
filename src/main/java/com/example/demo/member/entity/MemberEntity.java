@@ -2,8 +2,12 @@ package com.example.demo.member.entity;
 
 
 import com.example.demo.member.dto.MemberDTO;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+
 import javax.persistence.*;
 
 @Entity
@@ -24,6 +28,25 @@ public class MemberEntity {
     private String sex;
     private int userage;
 
+    @Column(columnDefinition = "int (20) default 0 ")
+    private int benchpress;
+
+    @Column(columnDefinition = "int (20) default 0 ")
+    private int deadlift;
+
+    @Column(columnDefinition = "int (20) default 0 ")
+    private int squat;
+
+    @Column(columnDefinition = "int (20) default 0 ")
+    private int bigthree;
+
+    @Column(columnDefinition = "VARCHAR (255) default '이것은 !!!' ")
+    private String tiername;
+
+
+
+
+
 //    private enum rating_list{
 //        Iron, Bronze, Silver, Gold, Platinum, Diamond, Master, Grandmaster, challenger
 //    }
@@ -38,6 +61,11 @@ public class MemberEntity {
         memberEntity.setNickname(memberDTO.getNickname());
         memberEntity.setUserage(memberDTO.getUserage());
         memberEntity.setSex(memberDTO.getSex());
+        memberEntity.setBenchpress(memberDTO.getBenchpress());
+        memberEntity.setDeadlift(memberDTO.getDeadlift());
+        memberEntity.setSquat(memberDTO.getSquat());
+        memberEntity.setBigthree(memberDTO.getBigthree());
+        memberEntity.setTiername(memberDTO.getTiername());
         return memberEntity;
     }
 
@@ -49,6 +77,11 @@ public class MemberEntity {
         memberEntity.setNickname(memberDTO.getNickname());
         memberEntity.setUserage(memberDTO.getUserage());
         memberEntity.setSex(memberDTO.getSex());
+        memberEntity.setBenchpress(memberDTO.getBenchpress());
+        memberEntity.setDeadlift(memberDTO.getDeadlift());
+        memberEntity.setSquat(memberDTO.getSquat());
+        memberEntity.setBigthree(memberDTO.getBigthree());
+        memberEntity.setTiername(memberDTO.getTiername());
         return memberEntity;
     }
 }

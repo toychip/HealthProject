@@ -6,6 +6,7 @@ import com.example.demo.member.entity.MemberEntity;
 import com.example.demo.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -49,13 +50,22 @@ public class MemberService {
         }
     }
     public List<MemberDTO> findAll() {
-        List<MemberEntity> memberEntityList = memberRepository.findAll();
+
+
+        List<MemberEntity> memberEntityList = memberRepository
+                .findAll(Sort.by(Sort.Direction.DESC, "bigthree"));
         List<MemberDTO> memberDTOList = new ArrayList<>();
         for (MemberEntity memberEntity: memberEntityList) {
             memberDTOList.add(MemberDTO.toMemberDTO(memberEntity));
 //            MemberDTO memberDTO = MemberDTO.toMemberDTO(memberEntity);
 //            memberDTOList.add(memberDTO);
+
+
         }
+
+//        List<Article> list = articleRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
+//        return list;
+////
         return memberDTOList;
     }
     public MemberDTO findById(Long id) {

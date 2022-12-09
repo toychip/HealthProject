@@ -1,20 +1,22 @@
 .workout-eachpart{
     padding: 55px;
 }
+
+
 .workout-title{
     position: relative;
-    left:280px;
+    left: -10px;
     margin-bottom: 25px;
-    width: 66%;
+
 
     
 
 }
 .workout-title h3{
     font-weight: 600;
-    font-size: 35px;
-    background-color: rgba(0,0,0,0.05);
-    width: ;
+    font-size: 20px;
+
+    
 
 }
 
@@ -52,7 +54,56 @@
     margin-top: 20px;
 }
 
-
+.muscle-area{
+    margin-top: -20px;
+}
 .muscle-area h2{
     font-weight: 600;
+    color: #204099;
+}
+
+.steps-list {
+    counter-reset: mw-counter;
+    list-style: none;
+ 
+    padding: 0;
+}
+.steps-list li::before {
+    background: green;
+    border-radius: 40px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 40%), 0 0 0 5px #f5f8fa, 5px 0 2px rgb(0 0 0 / 60%);
+    color: #fff;
+    content: counter(mw-counter);
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    left: -1.2em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+.steps-list li {
+  
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    counter-increment: mw-counter;
+    font-size: 15px;
+    margin: 0 0 1.5rem 1em;
+    padding: 10px 15px 10px 35px;
+    position: relative;
+}
+
+.first-workout{
+    margin-bottom: 60px;
+}
+
+
+h3 .mw-headline {
+    color: green;
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    padding: 10px 0;
 }

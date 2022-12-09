@@ -31,9 +31,9 @@ a{
     border: 1px solid rgba(0,0,0,0.4);
  }
 
-.signup-btn-wrap{
+.signup-btn-wraps{
     height: 60px;
-    width: 300px;
+    width: 310px;
     line-height: 55px;
     margin-top: 35px;
     border: solid 1px rgba(0,0,0,.1);
@@ -41,16 +41,9 @@ a{
     color: #fff;
     cursor: pointer;
 }
-#signup-btn{
-    background-color: #03c75a;
-    border: none;
-    color:#fff;
-    font-size:20px;
-    outline:none;
-    cursor: pointer;
-}
 
-#signup-sex{
+
+#signup-sexs{
     width: 310px;
     height: 32px;
     border: 1px solid rgba(0,0,0,0.4);

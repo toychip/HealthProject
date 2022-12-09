@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>득근득근💖-랭킹</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" href="master-main">
+            득근득근💪
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="community-free">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+
+</nav>
+
+
+
+
+
+
+<div class="community-title">
+    <h3>랭킹🏆</h3>
+</div>
+
+<div class="rank-btns" role="group" aria-label="Basic outlined example">
+    <a href="rank-whole"> <button type="button" class="btn btn-outline-primary active ">전체랭킹</button></a>
+
+    <a class="rank-challenge navbar-brand" href="community-challenge">
+        <span class="big-three-challenge">3대도전하기!</span>
+    </a>
+</div>
+
+
+
+<div class="container">
+    <table class="table  table-hover table-padding center">
+
+
+        <tr>
+            <th>랭킹</th>
+            <th>닉네임</th>
+            <th>3대 총합</th>
+            <th>벤치프레스</th>
+            <th>데드리프트</th>
+            <th>스쿼트</th>
+            <!--    <th>상세조회</th>-->
+            <!--    <th>삭제</th>-->
+        </tr>
+        <tr th:each="member, memberStat : ${memberList}">
+<!--            \${#lists.size(arrList)}-->
+            <td th:text="${memberStat.count}"></td>
+            <td th:text="${member.username}"></td>
+            <td th:text="${member.bigthree}"></td>
+            <td th:text="${member.benchpress}"></td>
+            <td th:text="${member.deadlift}"></td>
+            <td th:text="${member.squat}"></td>
+
+        </tr>
+
+
+
+
+
+    </table>
+
+
+    <!-- <th:block  class="list-order" th:each="page : ${#numbers.sequence(startPage, endPage)}">
+      <a th:if="${page != nowPage}" th:href="@{/board/list(page = ${page - 1}, searchKeyword = ${param.searchKeyword})}" th:text="${page}"></a>
+      <strong th:if="${page == nowPage}" th:text="${page}" style="color : red"></strong>
+    </th:block> -->
+
+
+    <!-- <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">이전</a></li>
+          <li class="page-item"><a class="page-link" href="#">다음</a></li>
+        </ul>
+      </nav> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/rank.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

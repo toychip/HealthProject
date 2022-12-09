@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-광배근</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area">
+        <h2>광배근</h2>
+    </div>
+    <a href="lats_dumbell_master"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="lats_bodyweight_master"><button type="button" class="button btn-outline-primary  bodyweight">맨몸</button></a>
+    <a href="lats_machine_master"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="lats_barbell_master"><button type="button" class="button btn-outline-primary barbell  ">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle active" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            케틀벨
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="lats_band_master">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="lats_stretch_master">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="lats_cable_master">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="lats_kettlebell_master">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    케틀벨 숄더 익스텐션
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-shoulderextension-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-shoulderextension-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                어깨너비로 발을 벌리고 서서 편안할 때까지 엉덩이를 앞으로 구부립니다. 안정성을 위해 같은 쪽 허벅지에 손을 대십시오.</li>
+            <li> 한 손에 케틀벨을 잡고 똑바로 무장하고 바닥을 향하게 합니다.</li>
+            <li>  팔을 똑바로 유지하고 편안하게 뒤로 케틀벨을 휘두릅니다.</li>
+            <li>  시작 위치로 돌아가 반복합니다.</li>
+
+
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    케틀벨 풀 오버
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-pullover-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-pullover-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                벤치에 등을 대고 상체와 허벅지를 바닥과 평행하게 유지하면서 발바닥을 바닥에 단단히 놓습니다.</li>
+            <li> 두 손으로 케틀벨을 가슴 위로 잡고 팔을 똑바로 유지합니다.</li>
+            <li> 팔을 똑바로 유지하면서 팔이 바닥과 평행이 될 때까지 케틀벨을 머리 방향으로 움직입니다.</li>
+            <li> 시작 위치로 돌아가서 반복합니다.</li>
+
+        </ol>
+
+    </div>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

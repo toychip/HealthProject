@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-삼두근</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area">
+        <h2>삼두근</h2>
+    </div>
+    <a href="triceps_dumbell_master"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="triceps_bodyweight_master"><button type="button" class="button btn-outline-primary  bodyweight">맨몸</button></a>
+    <a href="triceps_machine_master"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="triceps_barbell_master"><button type="button" class="button btn-outline-primary barbell active">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            더보기
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="triceps_band_master">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="triceps_stretch_master">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="triceps_cable_master">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="triceps_kettlebell_master">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 라잉 트라이셉스 익스텐션
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-laying-tricep-extensions-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-laying-tricep-extensions-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                평평한 벤치에 누워 어깨 너비의 그립으로 바벨을 잡습니다.</li>
+            <li>바벨이 가슴 바로 위에 올 때까지 팔꿈치를 완전히 펴십시오.</li>
+            <li>팔꿈치를 구부리기 시작하고 바벨이 이마에 거의 닿도록 합니다.</li>
+            <li>팔꿈치를 다시 시작 위치로 뻗고 반복합니다.</li>
+
+
+        </ol>
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 클로스그립 벤치 프레스
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/barbell-male-closegripbenchpress-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/barbell-male-closegripbenchpress-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                바닥에 발을 대고 벤치에 평평하게 눕습니다. 바를 좁게 잡고 팔을 곧게 펴십시오.</li>
+            <li> 바를 아래-중간 가슴으로 내립니다.</li>
+            <li>  팔꿈치가 잠길 때까지 천천히 바를 올립니다.</li>
+
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 플로어 플레스
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-floor-press-front_gKmljBI.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-floor-press-side_dpK7sz7.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                바의 랙을 풀고 팔꿈치와 어깨에서 휴식을 취하십시오.</li>
+            <li> 팔꿈치를 바닥에 대고 1초 동안 휴식을 취하여 반복자의 모든 운동량을 제거한 다음 로크아웃을 누릅니다.</li>
+         
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 스컬 크러셔
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-skullcrusher-front_qpHWUa8.gif"/>
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-skullcrusher-side_B7Z6225.gif"/>
+        
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                어깨너비로 그립을 잡습니다. 팔꿈치에서 휴식. 팔꿈치가 안으로 들어가도록 하십시오. 팔꿈치가 벌어지지 않도록 하십시오.</li>
+            <li> 이마에서 몇 인치 떨어진 곳에서 바를 멈추고 팔꿈치를 다시 위로 뻗습니다.</li>
+          
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 오버헤드 트라이셉스 익스텐션
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-overhead-extension-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-overhead-extension-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                바가 머리 위의 제자리에 놓이도록 주의하십시오. 팔꿈치를 안으로 밀어 넣은 상태에서 팔꿈치를 앞으로 밉니다.</li>
+            <li> 삼두근이 늘어나는 느낌이 드는지 살펴보세요. 주먹이 천장을 가리킬 때까지 팔꿈치를 펴십시오.</li>
+            
+        </ol>
+    </div>
+   
+    <!-- <div class="not-ready">
+        <h1>현재 준비중입니다...</h1>
+    </div> -->
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

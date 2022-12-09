@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-전완근</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area"><h2>전완근</h2>
+    </div>
+    <a href="forearms_dumbell_beginner"><button type="button" class="button btn-outline-primary dumbell active">덤벨</button></a>
+    <a href="forearms_bodyweight_beginner"><button type="button" class="button btn-outline-primary  bodyweight">맨몸</button></a>
+    <a href="forearms_machine_beginner"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="forearms_barbell_beginner"><button type="button" class="button btn-outline-primary barbell">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            더보기
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="forearms_band_beginner">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="forearms_stretch_beginner">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="forearms_cable_beginner">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="forearms_kettlebell_beginner">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    덤벨 위스트 컬
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-db-wristflex-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-db-wristflex-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                손바닥이 팔뚝을 위로 향하게하여 덤벨을 잡고 팔뚝을 무릎에 대고 놓았습니다.</li>
+            <li> 반원형 움직임으로 손목을 천천히 위로 굽습니다.</li>
+            <li>  시작 위치로 돌아가서 반복합니다.</li>
+        
+        </ol>
+    
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    덤벨 로우
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-unilateral-row-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-unilateral-row-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                안정된 것(벤치, 상자)에 대해 팔을 고정하십시오. 작업 중인 팔의 측면에 있는 다리가 뒤로 오도록 스탠스를 비틀어 놓습니다.</li>
+            <li> 상체가 지면과 평행이 되도록 하십시오. 그러면 가동 범위가 확장됩니다.</li>
+            <li> 팔을 자유롭게 늘어뜨린 다음 팔꿈치를 뒤로 당깁니다. 겨드랑이에 테니스 공을 가지고 있다고 상상해보십시오.</li>
+        
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    덤벨 위스트 익스텐션
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-db-wristext-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-db-wristext-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                오버핸드 그립으로 두 개의 덤벨을 잡고 팔뚝을 무릎 위에 놓습니다.</li>
+            <li> 손목을 완전히 구부린 다음 손목을 펴십시오.</li>
+
+        </ol>
+        
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

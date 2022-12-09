@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-둔근</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area"><h2>둔근</h2>
+    </div>
+    <a href="glutes_dumbell_beginner"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="glutes_bodyweight_beginner"><button type="button" class="button btn-outline-primary  bodyweight">맨몸</button></a>
+    <a href="glutes_machine_beginner"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="glutes_barbell_beginner"><button type="button" class="button btn-outline-primary barbell ">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle active" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            케이블
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="glutes_band_beginner">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="glutes_stretch_beginner">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="glutes_cable_beginner">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="glutes_kettlebell_beginner">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    케이블 고블렛 스쿼트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/cable-male-gobletsquat-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/cable-male-gobletsquat-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                직선 막대 또는 쉬운 막대 부착으로 시작하십시오.</li>
+            <li>  팔꿈치를 바 바로 아래에 놓고 똑바로 쪼그리고 앉았다가 몇 걸음 뒤로 물러나십시오.</li>
+            <li>스쿼트를 시작하기 위해 무릎과 엉덩이에 휴식을 취하십시오. 평평한 등을 유지하십시오.</li>
+            <li>  쪼그리고 앉는 자세로 완전히 돌아갑니다.</li>
+
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    케이블 풀 스로우
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/cable-male-pullthrough-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/cable-male-pullthrough-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                이 운동은 로프 부착으로 가장 잘 작동하지만 무엇이든 할 수 있습니다. 부착물은 기계 바닥에 설치해야 합니다.</li>
+            <li>케이블 머신에서 반대쪽을 바라보고 케이블 자체에 걸치고 부착물을 잡습니다. 몇 걸음 떨어져 있습니다.</li>
+            <li>  평평한 등을 유지하고 대부분 무릎을 펴면서 엉덩이에서 휴식을 취하십시오.</li>
+            <li>  다시 선 자세로 돌아올 때까지 엉덩이를 앞으로 밀어줍니다.</li>
+
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                 케이블 힙 업덕션
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/cable-male-hipabduction-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/cable-male-hipabduction-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                발목 부착물을 사용하십시오. 케이블은 맨 아래까지 설정해야 합니다.</li>
+            <li> 바깥쪽 다리의 발목 부착물을 옆으로 향하게 합니다. 몇 걸음 떨어져 있습니다.</li>
+            <li> 엉덩이를 외전하고 다리를 옆으로 들어 올립니다.</li>
+            <li> 시작 위치로 돌아가서 발이 땅에 닿기 직전에 멈춥니다(근육의 긴장을 유지하기 위해).</li>
+        </ol>
+    </div>
+    
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    케이블 글루트 킥백
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/cable-male-glutekickback-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/cable-male-glutekickback-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                발목 부착물을 사용하십시오. 케이블은 크로스오버 머신의 바닥에 놓아야 합니다.</li>
+            <li> 발목을 뒤로 똑바로 밀고 엉덩이까지 뻗어줍니다. 둔근의 수축을 느낄 때 1카운트 동안 유지합니다.</li>
+            <li>그런 다음 원래 위치로 돌아올 때까지 엉덩이를 구부립니다.</li>
+           
+        </ol>
+    </div>
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

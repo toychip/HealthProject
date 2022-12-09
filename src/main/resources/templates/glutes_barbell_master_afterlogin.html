@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-둔근</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area">
+        <h2>둔근</h2>
+    </div>
+    <a href="glutes_dumbell_master"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="glutes_bodyweight_master"><button type="button" class="button btn-outline-primary  bodyweight">맨몸</button></a>
+    <a href="glutes_machine_master"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="glutes_barbell_master"><button type="button" class="button btn-outline-primary barbell active">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            더보기
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="glutes_band_master">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="glutes_stretch_master">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="glutes_cable_master">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="glutes_kettlebell_master">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 힙 스러스트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-bb-front-hipthrust_2cl2LRD.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-hipthrust_K9Eyn2T.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                뒤에 벤치와 함께 바닥에 앉으십시오. 엉덩이 바로 위 다리 위에 바벨을 놓으십시오.</li>
+            <li>어깨가 받쳐지도록 벤치에 등을 기대고 벤치를 지지대로 사용하여 팔을 양쪽으로 뻗습니다.</li>
+            <li> 발을 통해 운전하고 엉덩이를 위쪽으로 확장하여 무게를 올립니다. 어깨와 발로 무게를 지탱하십시오.</li>
+            <li> 가능한 한 천천히 뻗은 다음 천천히 시작 위치로 돌아갑니다.</li>
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 스쿼트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/barbell-male-highbarsquat-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/barbell-male-highbarsquat-back.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                 발을 어깨 너비로 벌리고 섭니다.  등의 자연스러운 아치를 유지하고 견갑골을 조이고 가슴을 들어 올리십시오.</li>
+            <li>어깨를 가로질러 바를 잡고 등 위쪽으로 지지합니다. 다리를 곧게 펴서 막대를 풀고 한 걸음 뒤로 물러나십시오.</li>
+            <li>엉덩이가 무릎 아래에 올 때까지 등의 형태를 바꾸지 않고 무게를 낮출 때 무릎을 구부립니다.</li>
+            <li>바를 시작 위치로 되돌리고 다리를 들어 올리며 상단에서 숨을 내쉬십시오.</li>
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 커시 런지
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/barbell-male-curtsylunge-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/barbell-male-curtsylunge-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                바벨을 등에 대고 바벨을 내리는 동시에 발을 앞뒤로 움직입니다.</li>
+            <li> 시작으로 돌아가 다른 다리로 반복합니다.</li>
+        
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 불가리아 스플릿 스쿼트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-bulgarian-split-squat-front_PzOpslJ.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-bulgarian-split-squat-side_ZYzyhEn.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                대략 무릎 높이 또는 몇 인치 낮은 상자나 벤치를 찾으십시오. (상자가 낮을수록 이동성 요구 사항이 낮습니다).</li>
+            <li>상자에 발가락이나 발등을 올려놓을 수 있습니다. 앞발을 앞으로 향하게 하거나 약간 바깥쪽으로 돌린 상태에서 무릎과 엉덩이를 동시에 파괴합니다.</li>
+            <li>  앞다리가 평행 깊이(햄스트링 지면과 평행) 이하에 닿도록 하는 것을 목표로 합니다.</li>
+            <li>  앞발이 더 앞으로 나올수록 엉덩이의 가동 범위가 더 길어집니다. 앞발이 뒤로 갈수록 무릎의 ROM이 길어집니다.</li>
+        
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 프론트 스쿼트 올림픽
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-front-squat-olympic-front_f5DAl1E.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-front-squat-olympic-side_5Awe0Dt.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                막대의 표시로 손을 측정하여 균형이 맞는지 확인하십시오. 그런 다음 팔꿈치를 바 아래로 던지십시오.</li>
+            <li>바는 어깨에 너무 높게 설정되어 목에 약간 파고들어야 합니다. 전체 담당자를 위해 팔꿈치를 천장까지 밀어야 합니다. 너무 앞으로 나아가지 않도록.</li>
+            <li>등받이 또는 가블렛 스쿼트에 사용할 스쿼트 자세를 사용합니다. 엉덩이를 뒤로 밀어 스쿼트를 시작합니다. 평행 깊이에 도달할 때까지 무릎에서 휴식을 취하십시오.</li>
+            <li>  쪼그리고 앉는 자세로 돌아갑니다.</li>
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 프론트 스쿼트 바디빌딩
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-front-squat-bodybuilding-front_EJTjKlp.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-front-squat-bodybuilding-side_15O3q6K.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                어깨를 바에 대고 측정하여 균형이 맞는지 확인하십시오. 바가 목을 살짝 파고 있어야 합니다.</li>
+            <li>너무 앞으로 나아가지 않도록 팔꿈치를 천장까지 밀어야 합니다.</li>
+            <li> 엉덩이를 뒤로 밀어 스쿼트를 시작합니다. 평행 깊이에 도달할 때까지 무릎에서 휴식을 취하십시오.</li>
+            <li> 쪼그리고 앉는 자세로 돌아갑니다.</li>
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 하이바 굿모닝
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-bb-front-highbargm_ZP0wID2.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-highbargm_Yth0qDn.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                당신의 승모에 바를 놓습니다. 바가 경추를 파고들지 않도록 패드가 필요할 수 있습니다.</li>
+            <li>엉덩이를 똑바로 뒤로 밀어줍니다. 무릎은 대부분 펴진 상태를 유지해야 합니다(부드러운 무릎을 생각하십시오).</li>
+            <li>  햄스트링이 늘어나는 느낌이 드는지 살펴보세요. 늘어나는 느낌은 척추를 둥글게 하지 않고 가동 범위의 끝에 가까워지고 있음을 의미합니다.</li>
+            <li>  스트레칭이 느껴지면 서 있는 자세가 될 때까지 엉덩이를 앞으로 내밉니다.</li>
+
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 로우바 굿모닝
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-bulgarian-split-squat-front_PzOpslJ.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-lowbargm_USblUzF.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                승모과 후방 삼각근 사이에 바를 놓습니다. 견갑골을 뒤로 당겨 바에 앉을 수 있는 선반을 제공합니다.</li>
+            <li>햄스트링이 당기는 느낌이 들 때까지 엉덩이를 뒤로 미십시오. 이것은 척추를 둥글게 하지 않고 가동 범위의 끝에 가까워지고 있음을 의미합니다.</li>
+            <li>  스트레칭이 느껴지면 서 있는 자세가 될 때까지 엉덩이를 앞으로 내밉니다.</li>
+         
+
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 스모 데드리프트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-sumo-deadlift-front_aeM2BqT.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-sumo-deadlift-side_av3A2PM.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                스모 DL로 스탠스 폭이 다를 수 있습니다. 일부는 접시 근처의 발가락을 선호합니다. 다른 사람들은 바닥에서 더 많은 드라이브를 얻기 위해 더 좁은 자세를 선호합니다.</li>
+            <li> 팔이 다리 안에 있는지 확인하십시오. 바는 발 중간 바로 위에 있어야 합니다. 등을 펴고 발 뒤꿈치를 바닥에 밀어 넣으십시오.</li>
+            <li> 무릎과 엉덩이를 동시에 펴십시오.</li>
+       
+
+        </ol>
+    </div>
+
+    
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 스태가드 데드리프트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="'https://www.musclewiki.com/media/uploads/male-bb-front-staggereddl_ssnaFtA.gif'"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-staggereddl_6U4gaPe.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                한 발을 뒤에 놓습니다. 당신은 그 뒷발에 당신의 발가락에 있어야합니다. 앞발은 항상 평평해야 합니다.</li>
+            <li> 뒤쪽 무릎을 구부리고 엉덩이를 뒤로 밀어줍니다. 앞쪽 햄스트링의 스트레칭을 찾으십시오.</li>
+            <li> 스트레칭이 느껴지면 다시 선 자세로 돌아올 때까지 엉덩이를 앞으로 내밉니다.</li>
+     
+        </ol>
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 싱글렉 데드리프트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-bb-front-sldl_JD2ykQD.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-sldl_zqM9In1.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                엉덩이를 똑바로 뒤로 밀고 작동하지 않는 다리를 뒤로 뻗어 시작합니다. 각 반복마다 다른 발을 땅에 닿게 하는 것은 괜찮습니다.</li>
+            <li>무릎을 최대한 펴십시오. 햄스트링의 스트레칭을 찾으십시오. 스트레칭을 느끼면 서있는 자세로 돌아올 때까지 엉덩이를 앞으로 밀어냅니다.</li>
+        
+        </ol>
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 루마니안 데드리프트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-bb-front-rdl_Rg5paRL.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-rdl_oW1Iipz.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                어깨 너비, 더블 오버핸드 또는 혼합 그립을 취하십시오.</li>
+            <li>무릎은 대부분 펴진 상태에서 엉덩이를 뒤로 미십시오. 햄스트링의 스트레칭을 찾으십시오.</li>
+            <li>스트레칭을 느끼면 서있는 자세로 돌아올 때까지 엉덩이를 앞으로 밀어냅니다.</li>
+
+    
+        </ol>
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    바벨 로우바 스쿼트
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-barbell-lowbar-squat-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-barbell-lowbar-squat-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                견갑골을 뒤로 당기고 바를 후방 삼각근에 놓습니다.</li>
+            <li>엉덩이를 뒤로 밀고 무릎에서 휴식을 취하여 스쿼트를 시작하십시오.</li>
+            <li>햄스트링이 지면과 평행이 되도록 하는 것을 목표로 하세요. 발 뒤꿈치를 바닥에 밀어 넣고 서있는 자세로 다시 쪼그리고 앉습니다.</li>
+
+        </ol>
+
+    </div>
+
+   
+<!-- <div class="not-ready">
+    <h1>현재 준비중입니다...</h1>
+</div> -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

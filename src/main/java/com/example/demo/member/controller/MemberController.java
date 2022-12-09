@@ -45,6 +45,11 @@ public class MemberController {
             // login 성공
             session.setAttribute("loginUsername", loginResult.getUsername());
             session.setAttribute("loginNickname", loginResult.getNickname());
+            session.setAttribute("memberBenchpress", loginResult.getBenchpress());
+            session.setAttribute("memberDeadlift", loginResult.getDeadlift());
+            session.setAttribute("memberSquat", loginResult.getSquat());
+            session.setAttribute("memberBigthree", loginResult.getBigthree());
+
             return "beginner-main-afterlogin";
         } else {
             // login 실패
@@ -52,20 +57,21 @@ public class MemberController {
         }
     }
 
-    @GetMapping("/member/")
+    @GetMapping("/member/rank-whole")
     public String findAll(Model model) {
         List<MemberDTO> memberDTOList = memberService.findAll();
         // 어떠한 html로 가져갈 데이터가 있다면 model사용
         model.addAttribute("memberList", memberDTOList);
-        return "member_list";
+        return "rank-whole";
+
     }
 
-//    @GetMapping("/member/{id}")
-//    public String findById(@PathVariable Long id, Model model) {
-//        MemberDTO memberDTO = memberService.findById(id);
-//        model.addAttribute("member", memberDTO);
-//        return "mypage";
-//    }
+    @GetMapping("/member/{id}")
+    public String findById(@PathVariable Long id, Model model) {
+        MemberDTO memberDTO = memberService.findById(id);
+        model.addAttribute("member", memberDTO);
+        return "mypage";
+    }
 
     @GetMapping("/member/update")
     public String updateForm(HttpSession session, Model model) {
@@ -92,4 +98,10 @@ public class MemberController {
         session.invalidate();
         return "index";
     }
+
+//    @GetMapping("/member/rank-whole")
+//    public String login_to_rank() {
+//        return "rank-whole";
+//    }
 }
+

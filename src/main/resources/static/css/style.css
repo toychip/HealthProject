@@ -1,4 +1,4 @@
-@import "start.css";
+    @import "start.css";
 @import "master-main.css";
 @import "signin.css";
 @import "signup.css";
@@ -12,7 +12,6 @@
 @import "make-routine.css";
 @import "record-common.css";
 @import "mypage-correct.css";
-
 
 
 

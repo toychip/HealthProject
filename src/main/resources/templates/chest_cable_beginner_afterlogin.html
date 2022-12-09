@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-가슴</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area">
+        <h2>가슴</h2>
+    </div>
+    <a href="chest_dumbell_beginner"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="chest_bodyweight_beginner"><button type="button" class="button btn-outline-primary  bodyweight">맨몸</button></a>
+    <a href="chest_machine_beginner"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="chest_barbell_beginner"><button type="button" class="button btn-outline-primary barbell">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle active" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            케이블
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="chest_band_beginner">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="chest_stretch_beginner">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="chest_cable_beginner">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="chest_kettlebell_beginner">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+            <span class="mw-headline" id="Barbell-Bench-Press">
+                케이블 펙 플라이
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/cable-male-pecfly-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/cable-male-pecfly-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                핸들 부착물 세트를 기계 바닥까지 사용하십시오.</li>
+            <li>양쪽 핸들을 가슴으로 가져오고 케이블 크로스오버의 중앙에 있는지 확인합니다.</li>
+            <li>몇 걸음 앞으로 걸어갑니다. 그런 다음 무게를 앞으로 누릅니다. 거기에서 팔꿈치는 고정된 위치에 유지하면서 어깨는 수평으로 외전 및 내전되어야 합니다.</li>
+           
+        </ol>
+
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+            <span class="mw-headline" id="Barbell-Bench-Press">
+                케이블 체스트프레스
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/cable-male-chestpress-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/cable-male-chestpress-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                손잡이 부착물을 사용하십시오. 케이블은 어깨 높이로 설정해야 합니다.</li>
+            <li>양쪽 핸들을 가슴으로 가져오고 케이블 크로스오버의 중앙에 있는지 확인합니다.</li>
+            <li>몇 걸음 앞으로 걸어갑니다. 그런 다음 무게를 앞으로 누릅니다.</li>
+            <li> 거기에서 어깨와 팔꿈치를 동시에 구부리고 펴야 합니다.</li>
+        </ol>
+
+
+    </div>
+
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

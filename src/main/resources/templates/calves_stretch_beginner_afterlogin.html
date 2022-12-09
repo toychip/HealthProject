@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-종아리</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area">
+        <h2>종아리</h2>
+    </div>
+    <a href="calves_dumbell_beginner"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="calves_bodyweight_beginner"><button type="button" class="button btn-outline-primary  bodyweight ">맨몸</button></a>
+    <a href="calves_machine_beginner"><button type="button" class="button btn-outline-primary machine ">머신</button></a>
+    <a href="calves_barbell_beginner"><button type="button" class="button btn-outline-primary barbell">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle active" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            스트레칭
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="calves_band_beginner">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="calves_stretch_beginner">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="calves_cable_beginner">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="calves_kettlebell_beginner">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    종아리 스트레칭-1
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-strech-21-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-strech-21-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                발 뒤꿈치가 바닥에 닿은 상태에서 발의 공을 벽에 대십시오. 어깨 앞의 벽에 손을 대십시오.</li>
+            <li>무릎을 똑바로 유지하고 천천히 벽쪽으로 기울고 종아리 근육을 통해 확장되는 스트레칭을 느낄 때 몇 초 동안 멈춥니다.</li>
+            <li> 시작 위치로 돌아가 다른 다리로 스트레칭을 반복합니다.</li>
+        </ol>
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    종아리 스트레칭-2
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-strech-20-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-strech-20-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                두 발을 바닥에 평평하게 놓고 한 다리를 어깨 앞에 놓고 다른 다리는 다른 어깨 뒤에 이 위치를 미러링해야 합니다. 시작자세에서 양쪽 무릎이 일직선이어야 합니다.</li>
+            <li>손바닥을 어깨 높이로 벽에 대고 벽을 향해 기대고 뒷다리는 똑바로 유지하면서 앞다리를 무릎에서 구부립니다.</li>
+            <li> 스트레칭의 정점에서 일시 중지하고 시작 위치로 돌아갑니다. 다리의 위치를 ​​바꿔서 반복합니다.</li>
+        </ol>
+
+    </div>
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    종아리 스트레칭-3
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/male-strech-19-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/male-strech-19-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                균형을 돕기 위해 벽을 사용하기 위해 앞으로 몸을 기울이면서 플랫폼에서 발의 균형을 잡습니다. 스트레칭을 시작하기 전에 발이 평평하도록 종아리를 조입니다.</li>
+            <li> 발뒤꿈치를 땅을 향해 낮추고 잠시 멈춘 다음, 발가락 끝으로 서 있는 것처럼 양발을 통해 밀어내고 스트레칭의 정점에서 잠시 멈춥니다.</li>
+            <li> 필요에 따라 반복합니다.</li>
+        </ol>
+    </div>
+   
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

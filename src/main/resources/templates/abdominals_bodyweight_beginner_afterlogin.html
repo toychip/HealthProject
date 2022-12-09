@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부위별 운동-복근</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    abdominals
+</head>
+<body >
+<nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+
+
+<div class="first-row ">
+    <div class="muscle-area">
+        <h2>복근</h2>
+    </div>
+    <a href="abdominals_dumbell_beginner"><button type="button" class="button btn-outline-primary dumbell ">덤벨</button></a>
+    <a href="abdominals_bodyweight_beginner"><button type="button" class="button btn-outline-primary  bodyweight active ">맨몸</button></a>
+    <a href="abdominals_machine_beginner"><button type="button" class="button btn-outline-primary machine">머신</button></a>
+    <a href="abdominals_barbell_beginner"><button type="button" class="button btn-outline-primary barbell ">바벨</button></a>
+
+    <div class="health-more">
+        <button class="button  btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            더보기
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-items band" href="abdominals_band_beginner">밴드</a></li>
+            <li><a class="dropdown-items stretch" href="abdominals_stretch_beginner">스트레칭</a></li>
+            <li><a class="dropdown-items cable" href="abdominals_cable_beginner">케이블</a></li>
+            <li><a class="dropdown-items kettlebell " href="abdominals_kettlebell_beginner">케틀벨</a></li>
+            <li><a class="dropdown-items close" href="#">닫기❌</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<main class=" container workout-eachpart">
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    크런치
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/Crunch-Front-021316.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/Crunch-Side-021316.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>
+                무릎을 구부린 상태로 등을 대고 눕고 허리에서 약 1피트 떨어진 곳에 발을 평평하게 놓습니다.</li>
+            <li>손바닥이 바깥을 향하게 하여 관자놀이에 손가락 끝을 놓습니다.</li>
+            <li> 배를 척추 기저부로 당겨 근육을 결합한 다음 머리와 어깨를 바닥에서 들어 올립니다. 시작 위치로 돌아가 반복합니다.</li>
+
+
+        </ol>
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    라잉 레그 레이즈
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/LegRaises-Front-021316.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/LegRaises-Side-021316.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li> 양팔이 아래로 향하도록 등을 대고 눕습니다.</li>
+            <li> 다리를 모아서 가능한 한 곧게 유지하십시오.</li>
+            <li>  다리를 천천히 90° 각도로 올리고 이 위치에서 멈추거나 다리에 닿을 수 있는 높이까지 올린 다음 천천히 다리를 다시 내립니다.</li>
+            <li> 이러한 움직임의 지속 시간은 운동을 최대한 활용할 수 있도록 운동량을 활용하지 않도록 천천히 해야 합니다.</li>
+
+
+        
+      
+        </ol>
+
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    플랭크
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-forearm-plant-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-forarm-plank-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li>  팔꿈치를 90° 각도로 구부려 어깨 아래에 정렬하고 팔은 어깨 너비와 평행한 상태에서 팔뚝을 바닥에 놓습니다.</li>
+            <li> 발은 함께 있어야 하며 발가락만 바닥에 닿아야 합니다.</li>
+            <li>  바닥에서 배를 들어 올리고 발뒤꿈치에서 정수리까지 일직선이 되도록 유지합니다.</li>
+
+
+      
+        </ol>
+
+
+    </div>
+
+    <div class="first-workout">
+        <div class="workout-title">
+            <h3>
+<!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                <span class="mw-headline">
+                    행잉 레그레이즈
+            </span>
+            </h3>
+        </div>
+        <div class="workout-video">
+            <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-front.gif"/>
+            <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-side.gif"/>
+
+        </div>
+
+
+        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+            <li> 바를 잡고 매달리십시오. 몸은 움직이지 않고 다리는 곧게 펴십시오.</li>
+            <li> 무릎을 가슴까지 천천히 당깁니다.</li>
+            <li>  무릎을 최대한 높이 올렸다가 다리를 내리고 반복합니다. 이러한 움직임의 지속 시간은 운동을 최대한 활용할 수 있도록 운동량을 활용하지 않도록 천천히 해야 합니다.</li>
+            <li>  이러한 움직임의 지속 시간은 운동을 최대한 활용할 수 있도록 운동량을 활용하지 않도록 천천히 해야 합니다.</li>
+
+
+        
+        </ol>
+
+
+    </div>
+   
+
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

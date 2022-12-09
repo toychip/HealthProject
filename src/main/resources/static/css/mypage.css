@@ -61,7 +61,8 @@
 .white-thema{
     width: 38px;
     height: 38px;
-    background-color: whitesmoke;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    --bs-bg-opacity: 1;
     border-radius: 50%;
     color:black;
 }
@@ -157,4 +158,19 @@
 .mypage-info span{
     font-size: 30px;
     margin-left: 15px;
+}
+
+.firstcolorbtn,
+.secondcolorbtn,
+.thirdcolorbtn,
+.fourthcolorbtn,
+.fifthcolorbtn,
+.sixthcolorbtn,
+.seventhcolorbtn,
+.eighthcolorbtn{
+    width: 30px;
+    position: relative;
+    left:3px;
+    top:3px;
+    opacity: 0;
 }

@@ -43,8 +43,6 @@
         padding-top: 20px ;
         padding: 0px 200px;
 
-
-     
     }
     .link-btn ul li a {
         width: 180px;
@@ -74,4 +72,8 @@
    
     .logo h1{
         padding: 30px;
+    }
+
+    .head{
+        padding: 0;
     }

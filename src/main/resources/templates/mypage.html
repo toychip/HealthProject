@@ -54,10 +54,11 @@
 
 
 <div class="mypage-main">
-  <h1 class="mypage-title">내 정보</h1> <h2 th:text="${session.loginNickname}"></h2>
+  <h1 class="mypage-title">내 정보</h1>
   <div class="main-first-row">
     <div class="mypage-info">
       <img src="picture/silver.png" width="150px"/>
+      <h2 th:text="${session.loginNickname}"></h2>
       <!-- <span >내 닉네임</span> -->
     </div>
   </div>
@@ -69,20 +70,21 @@
       </div>
       <div class="big-three-total">
         <span>3대 총합: </span>
-        <span>219</span>
+        <h2 th:text="${session.memberBigthree}"></h2>
       </div>
       <div class="benchpress">
         <span>벤치프레스: </span>
-        <span>73</span>
+        <h2 th:text="${session.memberBenchpress}"></h2>
       </div>
       <div class="squat">
         <span>스쿼트: </span>
-        <span>73</span>
+        <h2 th:text="${session.memberDeadlift}"></h2>
       </div>
       <div class="deadlift">
         <span>데드리프트: </span>
-        <span>73</span>
+        <h2 th:text="${session.memberSquat}"></h2>
       </div>
+
     </div>
   </div>
   <div class="main-fourth-row">

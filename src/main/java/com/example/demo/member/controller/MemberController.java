@@ -66,10 +66,26 @@ public class MemberController {
 
     }
 
+    @GetMapping("/board/rank-whole")
+    public String findAlll(Model model) {
+        List<MemberDTO> memberDTOList = memberService.findAll();
+        // 어떠한 html로 가져갈 데이터가 있다면 model사용
+        model.addAttribute("memberList", memberDTOList);
+        return "rank-whole";
+
+    }
+
+
+
+
     @GetMapping("/member/{id}")
     public String findById(@PathVariable Long id, Model model) {
         MemberDTO memberDTO = memberService.findById(id);
+        List<MemberDTO> memberDTOList = memberService.findAll();
+        model.addAttribute("memberList", memberDTOList);
         model.addAttribute("member", memberDTO);
+
+
         return "mypage";
     }
 
@@ -99,9 +115,4 @@ public class MemberController {
         return "index";
     }
 
-//    @GetMapping("/member/rank-whole")
-//    public String login_to_rank() {
-//        return "rank-whole";
-//    }
 }
-

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -14,7 +13,7 @@
 <nav class="navbars navbar-light bg-light screen-header">
     <div class="title">
         <a class="navbar-brand" href="master-main">
-            득근득근💪
+            <img src="/picture/capstone2img.png" width=120px/>
         </a>
     </div>
 
@@ -46,10 +45,12 @@
     <div class="signin-up">
 
 
-    <a class="signup navbar-brand" href="mypage">
-        <span>마이페이지</span>
-    </a>
-    <h2 th:text="${session.loginNickname}"></h2>
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2  th:text="${session.loginNickname}"></h2>
+
+
 
     </div>
 
@@ -75,10 +76,17 @@
     <!-- /board/writepro -->
     <form action="/board/writepro" method="post" enctype="multipart/form-data">
         <div class="write-title">
-            <input class="search" name="title" type="text" placeholder="제목."/>
+            <input class="search" name="title" type="text" placeholder="제목"/>
         </div>
+
+
+        <div class="write-title">
+
+            <input class="search" name="writer" type="text"  placeholder="자신의 닉네임을 적으세요."/>
+        </div>
+
         <div class="write-info">
-            <textarea class="search" name="content" type="text" placeholder="내용."></textarea>
+            <textarea class="search" name="content" type="text" placeholder="내용"></textarea>
         </div>
         <div class="write-file">
             <input type="file" name="file">

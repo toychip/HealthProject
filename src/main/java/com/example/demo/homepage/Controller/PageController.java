@@ -64,13 +64,31 @@ public class PageController {
         return "/beginner-main-afterlogin";
     }
 
-
     @GetMapping("/member/mypage")
     public String login_after_mypage() {
         return "mypage";
     }
 
+    @GetMapping("/member/record")
+    public String login_member_record() {
+        return "record";
+    }
 
+
+    @GetMapping("/member/routine-time")
+    public String routine_time() {
+        return "routine-muscle";
+    }
+
+    @GetMapping("/member/routine-division")
+    public String routine_divsion() {
+        return "routine-division";
+    }
+
+    @GetMapping("/member/routine-muscle")
+    public String routine_muscle() {
+        return "routine-time";
+    }
 
 
 }

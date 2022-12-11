@@ -13,12 +13,12 @@
 <nav class="navbars navbar-light bg-light screen-header">
   <div class="title">
     <a class="navbar-brand">
-<!--      <a class="navbar-brand" href="master-main">-->
-      득근득근💪
+      <!--      <a class="navbar-brand" href="master-main">-->
+      <img src="/picture/capstone2img.png" width=120px/>
     </a>
   </div>
   <div class="more-functions">
-    <a class="signin navbar-brand" href="community-free">
+    <a class="signin navbar-brand" href="/board/list">
       <span>커뮤니티</span>
     </a>
     <a class="signup navbar-brand" href="routine-time">
@@ -26,6 +26,9 @@
     </a>
     <a class="community navbar-brand" href="rank-whole">
       <span>랭킹</span>
+    </a>
+    <a class="community navbar-brand" href="record">
+      <span>기록</span>
     </a>
   </div>
   <div class="change-level">
@@ -36,14 +39,14 @@
       숙련자🤴
     </a>
   </div>
-<!--  <div class="signin-up">-->
-<!--    <a class="signin navbar-brand" href="mypage">-->
-<!--      <span>마이페이지</span>-->
-<!--    </a>-->
-<!--    <a class="signup navbar-brand" href="signup">-->
-<!--      <span>회원가입</span>-->
-<!--    </a>-->
-<!--  </div>-->
+  <!--  <div class="signin-up">-->
+  <!--    <a class="signin navbar-brand" href="mypage">-->
+  <!--      <span>마이페이지</span>-->
+  <!--    </a>-->
+  <!--    <a class="signup navbar-brand" href="signup">-->
+  <!--      <span>회원가입</span>-->
+  <!--    </a>-->
+  <!--  </div>-->
 </nav>
 <!--<table>-->
 <!--  <tr>-->
@@ -57,8 +60,9 @@
   <h1 class="mypage-title">내 정보</h1>
   <div class="main-first-row">
     <div class="mypage-info">
-      <img src="picture/silver.png" width="150px"/>
+
       <h2 th:text="${session.loginNickname}"></h2>
+
       <!-- <span >내 닉네임</span> -->
     </div>
   </div>
@@ -66,7 +70,7 @@
     <div class="big-three">
       <div class="big-three-title">
         <h3 >내 3대중량 </h3>
-        <a href="community-challenge" class="navbar-brand">3대도전하기!</a>
+        <a href="/board/list" class="navbar-brand">3대도전하기!</a>
       </div>
       <div class="big-three-total">
         <span>3대 총합: </span>
@@ -87,29 +91,12 @@
 
     </div>
   </div>
-  <div class="main-fourth-row">
-    <div class="change-thema">
-      <span>앱 테마변경</span>
-    </div>
-    <div class="colors">
-      <div class="white-thema"></div>
-      <div class="gray-thema"></div>
-      <div class="yellow-thema"></div>
-      <div class="orange-thema"></div>
-      <div class="green-thema"></div>
-      <div class="blue-thema"></div>
-      <div class="purple-thema"></div>
-      <div class="black-thema"></div>
-      <div class="fluorescent-yellow-thema">
-        <i class="fas fa-lock fa-lg"></i>
-      </div>
-    </div>
-  </div>
+
   <div class="main-third-row">
-    <a href="mypage-correct" class="navbar-brand"><h4>내 정보 수정</h4></a>
-    <a href="" class="navbar-brand"><h4>로그아웃</h4></a>
-    <a class="navbar-brand" href="/member/update">내 정보 수정</a>
-    <a class="navbar-brand" href="/member/logout">로그아웃</a>
+    <a href="/member/update" class="navbar-brand"><h4>내 정보 수정</h4></a>
+    <a href="/member/logout" class="navbar-brand"><h4>로그아웃</h4></a>
+    <!--    <a class="navbar-brand" href="/member/update">내 정보 수정</a>-->
+    <!--    <a class="navbar-brand" href="/member/logout">로그아웃</a>-->
   </div>
   <div class="container">
     <canvas id="myChart"></canvas>

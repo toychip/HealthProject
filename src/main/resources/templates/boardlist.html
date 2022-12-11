@@ -118,8 +118,8 @@
             <tr>
                 <th scope="col">순번</th>
                 <th scope="col">제목</th>
-                <!-- <th scope="col">닉네임</th> -->
-                 <th scope="col">등록일</th>
+                 <th scope="col">작성자</th>
+<!--                 <th scope="col">등록일</th>-->
                 <!-- <th scope="col">조회수</th> -->
             </tr>
             </thead>
@@ -130,6 +130,10 @@
 
                 <td>
                     <a th:text= "${board.title}" th:href="@{/board/view(id=${board.id})}">제목입니다.</a>
+                </td>
+
+                <td>
+                    <a th:text= "${board.writer}"</a>
                 </td>
 
             </tr>

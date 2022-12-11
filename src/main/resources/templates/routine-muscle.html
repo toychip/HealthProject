@@ -1,0 +1,3364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>득근득근💖-루틴</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+
+  
+  <nav class="navbars navbar-light bg-light screen-header">
+    <div class="title">
+        <a class="navbar-brand" >
+            <img src="/picture/capstone2img.png" width=120px/>
+        </a>
+    </div>
+
+    <div class="more-functions">
+        <a class="signin navbar-brand" href="/board/list">
+            <span>커뮤니티</span>
+        </a>
+        <a class="signup navbar-brand" href="routine-time">
+            <span>루틴</span>
+        </a>
+        <a class="community navbar-brand" href="rank-whole">
+            <span>랭킹</span>
+        </a>
+        <a class="community navbar-brand" href="record">
+            <span>기록</span>
+        </a>
+    </div>
+
+    <div class="change-level">
+        <a href="beginner-main" class="navbar-brand">
+            초보자👶
+        </a>
+        <a  href="master-main" class="navbar-brand">
+            숙련자🤴
+        </a>
+
+    </div>
+
+<!--    <div class="signin-up">-->
+<!--        <a class="signin navbar-brand" href="/member/signin">-->
+<!--            <span>로그인</span>-->
+<!--        </a>-->
+<!--        <a class="signup navbar-brand" href="/member/signup">-->
+<!--            <span>회원가입</span>-->
+<!--        </a>-->
+
+<!--    </div>-->
+    <div class="signin-up">
+
+
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
+
+    </div>
+</nav>
+      
+      <div class="flex-shrink-0 p-3  size zz" style="width: 280px;">
+        <a  class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        
+          <span class="fs-5 fw-semibold">루틴</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+      
+          <li class="mb-1">
+          
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                부위별운동
+              </button>
+    
+            
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav  fw-normal pb-1 small">
+                <li><a href="#chest_routine" class="link-dark rounded">가슴루틴</a></li>
+                <li><a href="#lats_routine" class="link-dark rounded">광배근(등 상부)루틴</a></li>
+                <li><a href="#glutes_routine" class="link-dark rounded">둔근루틴</a></li>
+                <li><a href="#traps-middle_routine" class="link-dark rounded">등 중앙부루틴</a></li>
+                <li><a href="#lowerback_routine" class="link-dark rounded">등 하부루틴</a></li>
+                <li><a href="#hamstrings_routine" class="link-dark rounded">대퇴 이두근루틴</a></li>
+                <li><a href="#quads_routine" class="link-dark rounded">대퇴 사두근루틴</a></li>
+                <li><a href="#abdominals_routine" class="link-dark rounded">복근루틴</a></li>
+                <li><a href="#obliques_routine" class="link-dark rounded">복사근루틴</a></li>
+                <li><a href="#triceps_routine" class="link-dark rounded">삼두루틴</a></li>
+                <li><a href="#traps_routine" class="link-dark rounded">승모근루틴</a></li>
+                <li><a href="#shoulders_routine" class="link-dark rounded">어깨루틴</a></li>
+                <li><a href="#biceps_routine" class="link-dark rounded">이두루틴</a></li>
+                <li><a href="#forearms_routine" class="link-dark rounded">전완근루틴</a></li>
+                <li><a href="#calves_routine" class="link-dark rounded">종아리루틴</a></li>
+              </ul>
+            </div>
+          </li>
+         
+
+          <li class="mb-1">
+            <a href="routine-division">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                분할별운동
+              </button>
+            </a>
+          
+          </li>
+
+          <li class="mb-1">
+            <a href="routine-time">
+              <button class="btn btn-toggle align-items-center  rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                시간별운동
+              </button>
+            </a>
+           
+          </li>
+          <li class="border-top my-3"></li>
+         
+        </ul>
+      </div>
+        
+
+        
+
+          <div class="container xxx">
+          <div id="chest_routine">
+
+            <div>
+                <h2 class="routine_name">초보자를 위한 가슴 루틴
+                </h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>4set</span>
+                </h3>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+                        <span class="mw-headline" id="Barbell-Bench-Press">
+                        밴드 푸시업
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/band-male-pushup-side.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/band-male-pushup-front.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            허리 중앙에 밴드를 감습니다. 밴드의 끝은 엄지와 검지 사이의 손 주위에 있어야 합니다.</li>
+                        <li>이 운동은 경험 수준에 따라 무릎이나 발끝에서 할 수 있습니다.</li>
+                        <li>상완이 옆에 있을 때까지 팔꿈치를 부러뜨리는 것으로 시작합니다. 그런 다음 팔꿈치를 다시 위쪽 위치로 확장합니다.</li>
+            
+                    </ol>
+            
+            
+                </div>
+  
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+                        <span class="mw-headline" id="Barbell-Bench-Press">
+                        인클라인 푸시업 
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-incline-pushup-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-incline-pushup-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            벤치를 마주보고 서십시오.</li>
+                        <li>어깨 너비보다 약간 넓게 벤치 또는 플랫폼의 가장자리에 손을 놓습니다.</li>
+                        <li>가슴이 벤치에 거의 닿을 때까지 천천히 몸을 내립니다.</li>
+                        <li>팔이 뻗을 때까지 몸을 밀어 올립니다.</li>
+            
+                    </ol>
+            
+            
+                </div>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+                        <span class="mw-headline" id="Barbell-Bench-Press">
+                        디클라인 푸시업 
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-feet-elevated-push-up-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-feet-elevated-push-up-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            벤치를 사용하여 발을 높이십시오.</li>
+                        <li>손은 어깨 너비보다 약간 넓게 벌립니다.</li>
+                        <li>가슴이 거의 바닥에 닿을 때까지 천천히 몸을 내립니다.</li>
+                        <li>팔꿈치가 거의 잠길 때까지 몸을 들어 올리십시오.</li>
+            
+                    </ol>
+            
+            
+                </div>
+               
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+                        <span class="mw-headline" id="Barbell-Bench-Press">
+                        벤치 체스트 딥스
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-bodyweight-bench-chest-dips-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-bodyweight-bench-chest-dips-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            손으로 벤치의 가장자리를 잡고 발과 다리를 똑바로 유지하십시오.</li>
+                        <li>몸을 똑바로 내립니다.</li>
+                        <li>시작점까지 천천히 뒤로 누르십시오.</li>
+                    </ol>
+                  
+            
+                </div>
+              </div>
+            <div>
+              <h2 class="routine_name">가슴루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 벤치 프레스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-bench-press-front_C2G7O8r.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-bench-press-side_giVNk12.gif"/>
+        
+                </div>
+        
+        
+              <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바닥에 발을 대고 벤치에 평평하게 눕습니다. 곧은 팔로 바의 랙을 풉니다.</li>
+                    <li>  바를 가슴 중앙까지 내립니다.</li>
+                    <li> 팔꿈치가 잠길 때까지 바를 올립니다.</li>
+        
+                </ol>
+        
+            </div>
+
+            <div class="first-workout">
+              <div class="workout-title">
+                  <h3>
+      <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                      <span class="mw-headline">
+                          인클라인 바벨 벤치 프레스
+                  </span>
+                  </h3>
+              </div>
+              <div class="workout-video">
+                  <img src="https://www.musclewiki.com/media/uploads/male-barbell-incline-bench-press-front.gif"/>
+                  <img src= "https://www.musclewiki.com/media/uploads/male-barbell-incline-bench-press-side.gif"/>
+      
+              </div>
+      
+      
+              <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                  <li>
+                      벤치를 30도에서 45도 사이에 놓습니다.</li>
+                  <li>  바닥에 발을 대고 벤치에 평평하게 눕습니다. 곧은 팔로 바의 랙을 풉니다.</li>
+                  <li> 바를 가슴 중앙까지 내립니다.</li>
+                  <li> 팔꿈치가 잠길 때까지 바를 천천히 그리고 조절하십시오.</li>
+      
+      
+              </ol>
+      
+          </div>
+          <div class="first-workout">
+            <div class="workout-title">
+                <h3>
+    <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                    <span class="mw-headline">
+                        딥스
+                </span>
+                </h3>
+            </div>
+            <div class="workout-video">
+                <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif"/>
+                <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"/>
+    
+            </div>
+    
+    
+            <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                <li>
+                    장비 위에 팔을 고정한 상태로 몸을 잡습니다.</li>
+                <li> 앞으로 몸을 기울이면서 천천히 몸을 낮추고 팔꿈치를 벌리십시오.</li>
+                <li>팔이 잠길 때까지 막대 위로 몸을 들어 올리십시오.</li>
+    
+            </ol>
+    
+        </div>
+             
+        <div class="first-workout">
+          <div class="workout-title">
+              <h3>
+              <span class="mw-headline" id="Barbell-Bench-Press">
+                  케이블 펙 플라이
+              </span>
+              </h3>
+          </div>
+          <div class="workout-video">
+              <img src="https://www.musclewiki.com/media/uploads/cable-male-pecfly-front.gif"/>
+              <img src= "https://www.musclewiki.com/media/uploads/cable-male-pecfly-side.gif"/>
+  
+          </div>
+  
+  
+          <ol class="steps-list" style="margin: 4rem 0 1rem;">
+              <li>
+                  핸들 부착물 세트를 기계 바닥까지 사용하십시오.</li>
+              <li>양쪽 핸들을 가슴으로 가져오고 케이블 크로스오버의 중앙에 있는지 확인합니다.</li>
+              <li>몇 걸음 앞으로 걸어갑니다. 그런 다음 무게를 앞으로 누릅니다. 거기에서 팔꿈치는 고정된 위치에 유지하면서 어깨는 수평으로 외전 및 내전되어야 합니다.</li>
+             
+          </ol>
+  
+  
+      </div>
+            </div>
+
+            <div>
+              <h2 class="routine_name">가슴루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+                    <span class="mw-headline" id="Barbell-Bench-Press">
+                    덤벨 벤치 프레스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-bench-press-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-bench-press-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바닥에 발을 대고 벤치에 평평하게 눕습니다. 팔이 곧게 펴질 때까지 덤벨을 들어올립니다.</li>
+                    <li>덤벨을 가슴 중앙까지 내린다.</li>
+                    <li>팔꿈치가 잠길 때까지 덤벨을 들어 올리십시오.</li>
+        
+                </ol>
+        
+        
+            </div>
+
+            <div class="first-workout">
+              <div class="workout-title">
+                  <h3>
+      <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                      <span class="mw-headline" id="Barbell-Bench-Press">
+                 인클라인 덤벨 프레스
+                  </span>
+                  </h3>
+              </div>
+              <div class="workout-video">
+                  <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-inclined-bench-press-front.gif"/>
+                  <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-inclined-bench-press-side.gif"/>
+      
+              </div>
+      
+      
+              <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                  <li>
+                      벤치를 30도에서 45도 사이에 놓습니다.</li>
+                  <li>바닥에 발을 대고 벤치에 평평하게 눕습니다.</li>
+                  <li>덤벨을 가슴 중앙까지 내립니다.</li>
+                  <li>팔꿈치가 잠길 때까지 덤벨을 천천히 조절하십시오.</li>
+              </ol>
+      
+      
+          </div>
+
+          <div class="first-workout">
+            <div class="workout-title">
+                <h3>
+    <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                    <span class="mw-headline">
+                        딥스
+                </span>
+                </h3>
+            </div>
+            <div class="workout-video">
+                <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif"/>
+                <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"/>
+    
+            </div>
+    
+    
+            <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                <li>
+                    장비 위에 팔을 고정한 상태로 몸을 잡습니다.</li>
+                <li> 앞으로 몸을 기울이면서 천천히 몸을 낮추고 팔꿈치를 벌리십시오.</li>
+                <li>팔이 잠길 때까지 막대 위로 몸을 들어 올리십시오.</li>
+    
+            </ol>
+    
+        </div>
+             
+        <div class="first-workout">
+          <div class="workout-title">
+              <h3>
+              <span class="mw-headline" id="Barbell-Bench-Press">
+              덤벨 체스트 플라이
+              </span>
+              </h3>
+          </div>
+          <div class="workout-video">
+              <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-chest-flyes-front.gif"/>
+              <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-chest-flyes-side.gif"/>
+  
+          </div>
+  
+  
+          <ol class="steps-list" style="margin: 4rem 0 1rem;">
+              <li>
+                  벤치를 30도에서 45도 사이에 놓습니다.</li>
+              <li>가슴 위에 덤벨을 모으고 팔꿈치를 약간 구부린 상태에서 운동을 시작하십시오.</li>
+              <li>동시에 무게를 양쪽으로 내립니다.</li>
+              <li>웨이트가 벤치와 평행이 되면 멈춘 다음 팔을 시작 위치로 올립니다.</li>
+          </ol>
+  
+  
+      </div>
+            </div>
+
+            <div>
+              <h2 class="routine_name">가슴루틴C</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+                    <span class="mw-headline" id="Barbell-Bench-Press">
+                   푸시업
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-pushup-front_jOCMyoK.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-pushup-side_eeaJGyM.gif"/>
+        
+                </div>
+         
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        땅에 손을 단단히 두십시오.</li>
+                    <li>몸 전체가 일직선이 되도록 등을 펴고 천천히 몸을 내립니다.</li>
+                    <li>팔꿈치를 몸에 가깝게 유지하면서 견갑골을 앞뒤로 당깁니다.</li>
+                    <li>숨을 내쉬면서 시작 위치로 되돌립니다.</li>
+                </ol>
+        
+        
+            </div>
+
+            <div class="first-workout">
+              <div class="workout-title">
+                  <h3>
+                  <span class="mw-headline" id="Barbell-Bench-Press">
+                      케이블 체스트프레스
+                  </span>
+                  </h3>
+              </div>
+              <div class="workout-video">
+                  <img src="https://www.musclewiki.com/media/uploads/cable-male-chestpress-front.gif"/>
+                  <img src= "https://www.musclewiki.com/media/uploads/cable-male-chestpress-side.gif"/>
+      
+              </div>
+      
+      
+              <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                  <li>
+                      손잡이 부착물을 사용하십시오. 케이블은 어깨 높이로 설정해야 합니다.</li>
+                  <li>양쪽 핸들을 가슴으로 가져오고 케이블 크로스오버의 중앙에 있는지 확인합니다.</li>
+                  <li>몇 걸음 앞으로 걸어갑니다. 그런 다음 무게를 앞으로 누릅니다.</li>
+                  <li> 거기에서 어깨와 팔꿈치를 동시에 구부리고 펴야 합니다.</li>
+              </ol>
+      
+      
+          </div>
+
+          <div class="first-workout">
+            <div class="workout-title">
+                <h3>
+    <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                    <span class="mw-headline">
+                        케틀벨 워크오버 푸시업
+                </span>
+                </h3>
+            </div>
+            <div class="workout-video">
+                <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-walkover-pushup-front.gif"/>
+                <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-walkover-pushup-side.gif"/>
+    
+            </div>
+    
+    
+            <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                <li>
+                    발을 넓게 벌리고 한 손은 케틀벨에 올려놓은 상태에서 프레스 업 자세에서 시작하여 몸을 똑바로 유지한 상태에서 가슴을 바닥으로 낮추고 시작 위치로 돌아오는 완전한 프레스 업을 완료합니다.</li>
+                <li> 케틀벨 위에서 손을 바꿔 어깨 아래 케틀벨 위에 손을 놓고 한 번 더 프레스 업을 완료합니다.</li>
+                <li> 반복하다.</li>
+    
+            </ol>
+        </div>
+             
+        <div class="first-workout">
+          <div class="workout-title">
+              <h3>
+  <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                  <span class="mw-headline">
+                      딥스
+              </span>
+              </h3>
+          </div>
+          <div class="workout-video">
+              <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-dips-front_5pJM6Vh.gif"/>
+              <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-dips-side_5HAGnjr.gif"/>
+  
+          </div>
+  
+  
+          <ol class="steps-list" style="margin: 4rem 0 1rem;">
+              <li>
+                  장비 위에 팔을 고정한 상태로 몸을 잡습니다.</li>
+              <li> 앞으로 몸을 기울이면서 천천히 몸을 낮추고 팔꿈치를 벌리십시오.</li>
+              <li>팔이 잠길 때까지 막대 위로 몸을 들어 올리십시오.</li>
+  
+          </ol>
+  
+      </div>
+            </div>
+           
+
+          
+           
+
+
+            
+          </div>
+         
+            
+
+          <div id="lats_routine">
+            <div>
+              <h2 class="routine_name">광배근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            풀업
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-pullup-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-pullup-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        오버핸드 그립으로 바를 잡고 팔과 어깨를 완전히 펴십시오.</li>
+                    <li> 턱이 바 위에 올 때까지 몸을 위로 당깁니다.</li>
+                    <li>  몸을 다시 시작 위치로 내립니다.</li>
+        
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            렛풀 다운
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/NeutralGripPulldown-Front-021316.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/NeutralGripPulldown-Side-021316.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바를 어깨보다 약간 넓게 잡아줍니다.</li>
+                    <li>숨을 뱉으며 팔꿈치가 옆구리나 바닥을 찍는 느낌으로 약간 누우며 당겨줍니다.</li>
+                    <li> 숨을 마시며 등의 이완을 느끼며 올라가줍니다.</li>
+                
+                </ol>
+        
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">광배근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            벤트오버 바벨로우
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-bent-over-row-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-bent-over-row-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        어깨 너비의 회내 또는 회외 그립으로 바벨을 잡습니다.</li>
+                    <li>  평평한 등을 유지하면서 엉덩이를 앞으로 구부립니다.</li>
+                    <li> 체중을 상복부 쪽으로 당깁니다.</li>
+                    <li>  통제된 방식으로 무게를 낮추고 반복합니다.</li>
+        
+        
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케이블 풀오버
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/cable-male-pullover-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/cable-male-pullover-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        케이블은 기기의 맨 위로 완전히 설치해야 합니다.</li>
+                    <li> 첨부 파일을 잡고 몇 걸음 물러나십시오. 앞으로 기대고 있는 위치로 엉덩이를 뒤로 밀어주세요.</li>
+                    <li>팔꿈치가 아닌 어깨로 움직임을 시작하십시오. 아래쪽 허벅지를 통해 부착물을 당기려고 한다고 상상해 보세요.</li>
+                </ol>
+            </div>
+
+       
+            </div>
+
+    
+          </div>
+
+
+          <div id="glutes_routine">
+            <div>
+              <h2 class="routine_name">둔근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 스쿼트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/barbell-male-highbarsquat-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/barbell-male-highbarsquat-back.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                         발을 어깨 너비로 벌리고 섭니다.  등의 자연스러운 아치를 유지하고 견갑골을 조이고 가슴을 들어 올리십시오.</li>
+                    <li>어깨를 가로질러 바를 잡고 등 위쪽으로 지지합니다. 다리를 곧게 펴서 막대를 풀고 한 걸음 뒤로 물러나십시오.</li>
+                    <li>엉덩이가 무릎 아래에 올 때까지 등의 형태를 바꾸지 않고 무게를 낮출 때 무릎을 구부립니다.</li>
+                    <li>바를 시작 위치로 되돌리고 다리를 들어 올리며 상단에서 숨을 내쉬십시오.</li>
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 힙 스러스트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-bb-front-hipthrust_2cl2LRD.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-hipthrust_K9Eyn2T.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        뒤에 벤치와 함께 바닥에 앉으십시오. 엉덩이 바로 위 다리 위에 바벨을 놓으십시오.</li>
+                    <li>어깨가 받쳐지도록 벤치에 등을 기대고 벤치를 지지대로 사용하여 팔을 양쪽으로 뻗습니다.</li>
+                    <li> 발을 통해 운전하고 엉덩이를 위쪽으로 확장하여 무게를 올립니다. 어깨와 발로 무게를 지탱하십시오.</li>
+                    <li> 가능한 한 천천히 뻗은 다음 천천히 시작 위치로 돌아갑니다.</li>
+                </ol>
+            </div>
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">둔근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            포워드 런지
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-frontlunge-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-frontlunge-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        한 발로 앞으로 나아갑니다.</li>
+                    <li>  뒤쪽 무릎이 거의 바닥에 닿을 때까지 몸을 낮춥니다.</li>
+                    <li> 똑바로 유지하고 앞 무릎이 앞 발 위에 있는지 확인하십시오.</li>
+                    <li> 시작 위치로 돌아올 때까지 앞발로 바닥을 밉니다. 다리를 바꿉니다. </li>
+        
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 로우바 굿모닝
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-bulgarian-split-squat-front_PzOpslJ.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-lowbargm_USblUzF.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        승모과 후방 삼각근 사이에 바를 놓습니다. 견갑골을 뒤로 당겨 바에 앉을 수 있는 선반을 제공합니다.</li>
+                    <li>햄스트링이 당기는 느낌이 들 때까지 엉덩이를 뒤로 미십시오. 이것은 척추를 둥글게 하지 않고 가동 범위의 끝에 가까워지고 있음을 의미합니다.</li>
+                    <li>  스트레칭이 느껴지면 서 있는 자세가 될 때까지 엉덩이를 앞으로 내밉니다.</li>
+                 
+        
+                </ol>
+            </div>
+
+       
+            </div>
+
+    
+          </div>
+
+          <div id="traps-middle_routine">
+            <div>
+              <h2 class="routine_name">등중앙부루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                          풀업
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-pullup-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-pullup-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        오버핸드 그립으로 바를 잡고 팔과 어깨를 완전히 펴십시오.</li>
+                    <li>  턱이 바 위에 올 때까지 몸을 위로 당깁니다.   </li>
+                    <li>  몸을 다시 시작 위치로 내립니다.   </li>
+        
+          
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 인클라인 슈러그
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-inclineshrugs-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-inclineshrugs-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        발을 바닥에 단단히 고정하고 팔을 옆으로 늘어뜨리고 벤치의 뒤쪽 부분을 가로질러 몸을 기울입니다.</li>
+                    <li>  케틀벨을 양손으로 잡고 견갑골을 서로 만지려는 것처럼 맞물립니다. 어깨를 으쓱해 보세요. </li>
+                
+                </ol>
+            </div>
+        
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">등중앙부루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 데드리프트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-deadlift-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-deadlift-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        중간 발을 바 아래에 놓고 어깨 너비만큼 벌린 손으로 바를 잡습니다.</li>
+                    <li> 무릎을 구부린 다음 등을 곧게 펴서 바를 들어 올리십시오. 허리를 곧게 펴는 것이 중요합니다.</li>
+                    <li>  최대 높이로 서서 잡으십시오.</li>
+                    <li>  무릎을 구부리고 등을 똑바로 유지하여 바를 바닥으로 내립니다.</li>
+                </ol>
+        
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 로우
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-unilateral-row-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-unilateral-row-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        안정된 것(벤치, 상자)에 대해 팔을 고정하십시오. 작업 중인 팔의 측면에 있는 다리가 뒤로 오도록 스탠스를 비틀어 놓습니다.</li>
+                    <li>상체가 지면과 평행이 되도록 하십시오. 그러면 가동 범위가 확장됩니다.</li>
+                    <li> 팔을 자유롭게 늘어뜨린 다음 팔꿈치를 뒤로 당깁니다. 겨드랑이에 테니스 공을 가지고 있다고 상상해보십시오.</li>
+                
+                </ol>
+        
+            
+        
+            </div>
+
+       
+            </div>
+
+          </div>
+
+          
+          <div id="lowerback_routine">
+            <div>
+              <h2 class="routine_name">등하부루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 스윙
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-kb-swing-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-kb-swing-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        다리 사이에 케틀벨을 잡고 다리를 어깨너비보다 약간 넓게 벌리고 서서 무릎을 약간 구부립니다.</li>
+                    <li>  등을 똑바로 유지하면서 케틀벨이 가슴과 수평이 될 때까지 케틀벨을 위로 휘두르며 조심스럽게 내립니다.</li>
+                    <li> 반복합니다.</li>
+                </ol>
+        
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 스태거드 데드리프트
+                        </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-staggereddeadlift-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-staggereddeadlift-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        발을 어깨 너비로 벌리고 서서 한 발을 뒤로 옮깁니다. 두 손으로 케틀벨을 허벅지 앞에서 잡습니다.</li>
+                    <li> 무릎을 약간 구부리고 등을 똑바로 유지하면서 엉덩이를 앞으로 구부려 케틀벨을 바닥으로 가져옵니다.</li>
+                    <li>  직립 자세로 돌아가 반복합니다.</li>
+        
+        
+                </ol>
+        
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">등하부루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 데드리프트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-deadlift-front_Omfp4bo.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-deadlift-side_tSZaVor.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양발을 어깨너비로 벌리고 서서 케틀벨을 양손으로 허벅지 앞에 둡니다.</li>
+                    <li> 허리를 곧게 유지하면서 무릎을 약간 구부린 상태에서 케틀벨이 바닥에 닿도록 엉덩이를 앞으로 구부립니다.</li>
+                    <li>선 자세로 돌아가 반복합니다.</li>
+        
+                </ol>
+        
+        
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 고블렛 굿모닝
+                        </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-gobletgoodmorning-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-gobletgoodmorning-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양발을 어깨너비로 벌리고 서서 케틀벨을 양손으로 가슴 앞으로 잡습니다.</li>
+                    <li>허리와 무릎을 똑바로 유지하고 케틀벨을 가슴에 가깝게 유지하면서 엉덩이를 앞으로 구부립니다.</li>
+                    <li>선 자세로 돌아가 골반을 앞으로 내밉니다.</li>
+            
+        
+                
+                </ol>
+         
+        
+            </div>
+
+       
+            </div>
+
+          </div>
+
+          <div id="hamstrings_routine">
+            <div>
+              <h2 class="routine_name">대퇴이두근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            스탠딩 카프 레이즈
+
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/StandingCalfRaises-Front-021316.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/StandingCalfRaisesWide-Front-021316.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        키에 따라 기계를 조정하고 패딩 레버 아래에 어깨를 놓습니다.</li>
+                    <li> 발볼은 종아리 블록에서 체중을 지탱해야 하며, 발뒤꿈치는 ​​이 블록에서 뻗어 나와 있어야 합니다.</li>
+                    <li> 무릎을 고정한 상태에서 발뒤꿈치를 위로 뻗고 수축된 위치에서 잠시 멈춥니다.</li>
+                    <li> 천천히 시작 위치로 돌아갑니다. 반복하다.</li>
+
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 카프 레이즈
+
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-calve-raise-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-calve-raise-side.gif
+                    "/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바를 등에 놓으십시오.</li>
+                    <li>바닥에 평평한 발로 시작하십시오.</li>
+                    <li> 무릎을 고정한 상태에서 발뒤꿈치를 위로 뻗고 수축된 위치에서 잠시 멈춥니다.</li>
+                    <li> 천천히 시작 위치로 돌아갑니다. 반복하다..</li>
+
+                
+                </ol>
+    
+
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">대퇴이두근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            시티드 카프 레이즈
+
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/SeatedCalfRaises-Front-021316.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/SeatedCalfRaises-side-021316.gif
+                    "/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        장비에 익숙해진 다음 패드가 있는 레버 아래에 허벅지를 놓습니다. 발가락과 발볼을 발 지지대에 놓습니다.</li>
+                    <li> 핸들을 잡고 무게가 앞으로 나가지 않도록 하고 안전 바를 놓습니다. 종아리가 펴질 때까지 무게를 낮춥니다.</li>
+                    <li> 발 뒤꿈치를 위로 밀어 패딩 레버를 들어 올리고 수축 위치를 유지 한 다음 천천히 다시 시작 위치로 내립니다.</li>
+                
+
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 싱글렉 카프 레이즈
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-sl-calf-raises-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-sl-calf-raises-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        한 손에 케틀벨을 들고 똑바로 서서 케틀벨이 없는 쪽과 같은 발을 바닥에서 들어 올립니다.</li>
+                    <li>무릎을 고정한 상태에서 발뒤꿈치를 위로 올립니다.</li>
+                    <li>  발뒤꿈치가 완전히 펴졌을 때 잠시 멈췄다가 천천히 시작자세로 돌아와 반복합니다.</li>
+                </ol>
+        
+            </div>
+       
+            </div>
+
+          </div>
+
+          <div id="quads_routine">
+            <div>
+              <h2 class="routine_name">대퇴사두근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 스쿼트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/barbell-male-highbarsquat-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/barbell-male-highbarsquat-back.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        발을 어깨 너비로 벌리고 선다. 등의 자연스러운 아치를 유지하고 견갑골을 조이고 가슴을 들어 올리십시오.</li>
+                    <li> 어깨를 가로질러 바를 잡고 등 위쪽으로 지지합니다. 다리를 곧게 펴서 막대를 풀고 한 걸음 뒤로 물러나십시오.</li>
+                    <li>  엉덩이가 무릎 아래에 올 때까지 등의 형태를 바꾸지 않고 무게를 낮출 때 무릎을 구부립니다.</li>
+                    <li> 바를 시작 위치로 되돌리고 다리를 들어 올리며 상단에서 숨을 내쉬십시오.</li>
+        
+                </ol>
+        
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            레그 익스텐션
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/LegExtension-Front-021316.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/LegExtension-Side-021316.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        등을 쿠션에 대고 머신에 앉아 무릎이 시작 위치에서 90도 각도가 되도록 사용 중인 머신을 조정합니다.</li>
+                    <li> 무릎을 바깥쪽으로 뻗어 무게를 올린 다음 다리를 시작 위치로 내립니다. 두 동작 모두 느리고 통제된 동작으로 이루어져야 합니다. </li>
+               
+                </ol>
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">대퇴사두근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 포워드 런지
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src=" https://www.musclewiki.com/media/uploads/kettlebell-male-forwardlunge-front.gif"/>
+                    <img src= " https://www.musclewiki.com/media/uploads/kettlebell-male-forwardlunge-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        다리를 약간 벌리고 똑바로 서서 한 손에는 케틀벨을 잡습니다.</li>
+                    <li>케틀벨을 들고 있는 팔과 같은 다리를 앞으로 가져와 허벅지가 지면과 평행이 될 때까지 쪼그려 앉고 등을 곧게 유지합니다</li>
+                    <li> 시작 위치로 돌아가 반복합니다.</li>
+        
+        
+        
+                </ol>
+        
+        
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케틀벨 스텝 업
+
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/kettlebell-male-stepup-side.gif
+                    "/>
+                    <img src= "https://www.musclewiki.com/media/uploads/kettlebell-male-stepup-front.gif
+                    "/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        똑바로 서서 벤치를 발판으로 사용하여 한 발을 벤치 위로 올리고 똑 바른 다리와 같은 팔에 케틀벨을 잡습니다.</li>
+                    <li> 서서 두 발을 벤치에 가져옵니다. 천천히 다리를 다시 시작 위치로 내립니다.</li>
+                    <li>반복합니다.</li>
+                </ol>
+            </div>
+    
+
+       
+            </div>
+
+    
+          </div>
+
+            <div id="abdominals_routine">
+
+                <div>
+                    <h2 class="routine_name">초보자를 위한 복근 루틴
+                    </h2>
+                    <h3 class="exercise_count">
+                      <span>12~15회</span>
+                      <span>X</span>
+                    <span>5set</span>
+                    </h3>
+                    <div class="first-workout">
+                        <div class="workout-title">
+                            <h3>
+                <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                                <span class="mw-headline">
+                                    라잉 레그 레이즈
+                            </span>
+                            </h3>
+                        </div>
+                        <div class="workout-video">
+                            <img src="https://www.musclewiki.com/media/uploads/LegRaises-Front-021316.gif"/>
+                            <img src= "https://www.musclewiki.com/media/uploads/LegRaises-Side-021316.gif"/>
+                
+                        </div>
+                
+                
+                        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                            <li> 양팔이 아래로 향하도록 등을 대고 눕습니다.</li>
+                            <li> 다리를 모아서 가능한 한 곧게 유지하십시오.</li>
+                            <li>  다리를 천천히 90° 각도로 올리고 이 위치에서 멈추거나 다리에 닿을 수 있는 높이까지 올린 다음 천천히 다리를 다시 내립니다.</li>
+                            <li> 이러한 움직임의 지속 시간은 운동을 최대한 활용할 수 있도록 운동량을 활용하지 않도록 천천히 해야 합니다.</li>
+                
+                
+                        
+                      
+                        </ol>
+                
+                
+                    </div>
+      
+                    <div class="first-workout">
+                        <div class="workout-title">
+                            <h3>
+                <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                                <span class="mw-headline">
+                                    플랭크
+                            </span>
+                            </h3>
+                        </div>
+                        <div class="workout-video">
+                            <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-forearm-plant-front.gif"/>
+                            <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-forarm-plank-side.gif"/>
+                
+                        </div>
+                
+                
+                        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                            <li>  팔꿈치를 90° 각도로 구부려 어깨 아래에 정렬하고 팔은 어깨 너비와 평행한 상태에서 팔뚝을 바닥에 놓습니다.</li>
+                            <li> 발은 함께 있어야 하며 발가락만 바닥에 닿아야 합니다.</li>
+                            <li>  바닥에서 배를 들어 올리고 발뒤꿈치에서 정수리까지 일직선이 되도록 유지합니다.</li>
+                
+                
+                      
+                        </ol>
+                
+                
+                    </div>
+
+                    <div class="first-workout">
+                        <div class="workout-title">
+                            <h3>
+                <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                                <span class="mw-headline">
+                                    닐링 크런치
+
+                            </span>
+                            </h3>
+                        </div>
+                        <div class="workout-video">
+                            <img src="https://www.musclewiki.com/media/uploads/cable-kneelingcrunch-male-side.gif"/>
+                            <img src= "https://www.musclewiki.com/media/uploads/cable-kneelingcrunch-male-front.gif
+                            "/>
+                
+                        </div>
+                
+                
+                        <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                            <li> 이중 핸들 부착물을 사용하고 케이블을 맨 위로 끝까지 설정합니다.</li>
+                            <li> 앞으로 몇 걸음 걷다가 무릎을 꿇은 자세로 넘어집니다.</li>
+                            <li>  엉덩이를 뒤로 밀고 복근을 구부린 다음 시작 위치에 올 때까지 엉덩이를 앞으로 밀어냅니다.</li>
+                
+                
+
+                        </ol>
+                
+                
+                    </div>
+                  
+                  </div>
+            <div>
+              <h2 class="routine_name">복근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            레그 레이즈
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/female-leg-raises-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/female-leg-raises-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양쪽에 팔 손바닥을 내려 놓고 등을 대고 누워 있습니다.</li>
+                    <li> 다리를 가능한 한 똑바로 유지하십시오.</li>
+                    <li>  다리를 천천히 90 ° 각도로 높이 거나이 위치에서 일시 중지하거나 다리에 도달 할 수있는 한, 다리를 천천히 아래로 내립니다.</li>
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케이블 스탠딩 크런치
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/cable-standingcrunch-male-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/cable-standingcrunch-male-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        이중 핸들 부착물을 사용하고 케이블을 맨 위로 끝까지 설정합니다.</li>
+                    <li>케이블 타워를 바라보고 몇 걸음 앞으로 걸어갑니다.</li>
+                    <li>  엉덩이를 뒤로 밀고 복근을 구부립니다.</li>
+                    <li> 시작 자세로 돌아가 반복합니다.</li>
+        
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 우드 초퍼
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-woodchopper-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-woodchopper-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        어깨 너비 자세로 서십시오. 허벅지 근처에 덤벨을 위치시킵니다.</li>
+                    <li> 상단 척추 회전을 통해 반대쪽 위로 덤벨을 올립니다.</li>
+                    <li> 뒷발을 피벗하여 무릎에 너무 많은 토크를 생성하지 못하게합니다.</li>
+        
+                </ol>
+            </div>
+
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">복근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 싯업
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-situp-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-situp-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        척추를 중립으로 하여 바닥에 평평하게 눕습니다. 팔을 뻗어 주먹이 천장을 향하도록 합니다.</li>
+                    <li> 복근을 구부려 윗몸 일으키기. 전체 담당자의 천장을 향해 계속 손을 뻗습니다.</li>
+                
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            레그 레이즈
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/female-leg-raises-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/female-leg-raises-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양쪽에 팔 손바닥을 내려 놓고 등을 대고 누워 있습니다.</li>
+                    <li> 다리를 가능한 한 똑바로 유지하십시오.</li>
+                    <li>  다리를 천천히 90 ° 각도로 높이 거나이 위치에서 일시 중지하거나 다리에 도달 할 수있는 한, 다리를 천천히 아래로 내립니다.</li>
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 러시안 트위스트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-russian-twist-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-russian-twist-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바닥에 앉아 무릎과 엉덩이를 90도 각도로 구부립니다.</li>
+                    <li>  발은 땅에서 떠 있어야 합니다. (너무 힘들다면 바닥에 발 뒤꿈치로 시작)</li>
+                    <li>상부 척추를 회전하여 사선에 맞춥니다.</li>
+            
+                </ol>
+            </div>
+
+       
+            </div>
+
+            <div>
+                <h2 class="routine_name">복근루틴C</h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>5set</span>
+                </h3>
+
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                바벨 싯업
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-bb-front-situp_rRXGCBY.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-situp_fBUauNK.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            어깨너비보다 약간 넓은 그립으로 바를 잡습니다. 바를 천장을 향해 위로 밀고 팔꿈치 확장을 유지합니다.</li>
+                        <li> 복근을 구부리고 윗몸 일으키기. 바벨을 머리 위로 유지하면서 상체를 수직으로 만드는 것을 목표로 하세요.</li>
+                   
+                    </ol>
+                </div>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                행잉 레그레이즈
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-hanging-knee-raises-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li> 바를 잡고 매달리십시오. 몸은 움직이지 않고 다리는 곧게 펴십시오.</li>
+                        <li> 무릎을 가슴까지 천천히 당깁니다.</li>
+                        <li>  무릎을 최대한 높이 올렸다가 다리를 내리고 반복합니다. 이러한 움직임의 지속 시간은 운동을 최대한 활용할 수 있도록 운동량을 활용하지 않도록 천천히 해야 합니다.</li>
+                        <li>  이러한 움직임의 지속 시간은 운동을 최대한 활용할 수 있도록 운동량을 활용하지 않도록 천천히 해야 합니다.</li>
+            
+            
+                    
+                    </ol>
+            
+                </div>
+               
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                바벨 롤 아웃
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-bb-front-rollout_TIYAuZr.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-bb-side-rollout.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            양손으로 바벨을 잡고 발을 위로 하여 바닥에 무릎을 꿇고 바벨을 앞으로 천천히 굴려 몸을 곧게 펴십시오.</li>
+                        <li>  뻗은 자세에서 잠시 멈춘 후 시작 자세로 몸을 다시 당기기 시작합니다. 이것은 느리고 통제된 움직임이어야 합니다.</li>
+            
+                    </ol>
+                </div>
+  
+  
+         
+              </div>
+
+    
+          </div>
+
+          <div id="obliques_routine">
+            <div>
+              <h2 class="routine_name">복사근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케이블 팔로프 프레스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/cable-paloffpress-male-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/cable-paloffpress-male-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        어깨너비보다 약간 넓게 발을 벌리고 선다. 한 손에 케틀벨을 잡고 팔을 머리 위로 뻗습니다.</li>
+                    <li> 다리를 곧게 펴고 케틀벨을 머리 위로 올린 상태에서 이완된 팔을 바닥으로 내리고 몸을 올린 팔 옆으로 비틀어줍니다.</li>
+                    <li> 시작 포션으로 돌아가서 골반을 앞으로 기울이고 반복합니다.</li>
+        
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 우드 초퍼
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-woodchopper-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-woodchopper-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        어깨 너비 자세로 서십시오. 허벅지 근처에 덤벨을 위치시킵니다.</li>
+                    <li> 상단 척추 회전을 통해 반대쪽 위로 덤벨을 올립니다.</li>
+                    <li> 뒷발을 피벗하여 무릎에 너무 많은 토크를 생성하지 못하게합니다.</li>
+        
+                </ol>
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">복사근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 랜드마인 사이드 벤드
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/barbell-male-landminesidebend-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/barbell-male-landminesidebend-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        똑바로 서서 바벨 끝을 잡습니다.</li>
+                    <li> 엉덩이와 어깨를 앞으로 향하게 유지하고 천천히 한쪽으로 구부립니다.</li>
+                    <li>  수직 위치로 돌아갑니다.</li>
+                    <li>손을 바꿔 반복합니다.</li>
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 러시안 트위스트
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-russian-twist-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-russian-twist-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바닥에 앉아 무릎과 엉덩이를 90도 각도로 구부립니다.</li>
+                    <li>  발은 땅에서 떠 있어야 합니다. (너무 힘들다면 바닥에 발 뒤꿈치로 시작)</li>
+                    <li>상부 척추를 회전하여 사선에 맞춥니다.</li>
+            
+                </ol>
+            </div>
+
+       
+            </div>
+
+    
+          </div>
+
+          <div id="triceps_routine">
+
+            <div>
+                <h2 class="routine_name">초보자를 위한 삼두 루틴
+                </h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>4set</span>
+                </h3>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                케이블 푸시다운
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/cable-male-pushdown-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/cable-male-pushdown-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>케이블 바를 적당한 너비로 손등이 위로 가게 잡습니다.</li>
+                        <li> 팔꿈치를 옆구리에 고정시킵니다.</li>
+                        <li>  삼두근에 자극이 가는 것을 느끼면서 팔꿈치를 폅니다.</li>
+                        <li> 케이블의 돌아가려는 힘을 저지하면서 천천히 팔꿈치를 90도 정도까지 구부립니다.</li>
+            
+            
+            
+                    </ol>
+                    
+                </div>
+
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                벤치 딥스
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-bench-tricep-dip-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-bench-tricep-dip-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            손으로 벤치 가장자리를 잡고 발을 모으고 다리를 똑바로 유지하십시오.</li>
+                        <li>몸을 똑바로 아래로 내립니다.</li>
+                        <li> 천천히 다시 시작 지점까지 누릅니다.</li>
+                        <li>  팁: 발을 바닥에서 들어 올리고 무게를 추가하여 더 세게 만드십시오.</li>
+            
+                    
+                    </ol>
+            
+            
+                </div>
+
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                푸시업
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-pushup-front_jOCMyoK.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-pushup-side_eeaJGyM.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>어깨 바로 아래, 땅에 손을 단단히 놓으십시오.</li>
+                        <li>몸 전체가 일직선이 되도록 등을 펴고 천천히 몸을 내립니다.</li>
+                        <li> 팔꿈치를 몸에 가깝게 유지하면서 견갑골을 앞뒤로 당깁니다.</li>
+                        <li> 숨을 내쉬면서 시작 위치로 되돌립니다.</li>
+            
+            
+                        
+                    
+                    </ol>
+            
+            
+            
+                </div>
+            
+  
+              
+              </div>
+            <div>
+              <h2 class="routine_name">삼두루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            딥스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://musclewiki.com/media/uploads/bodyweight-male-dips-front.gif"/>
+                    <img src= "https://musclewiki.com/media/uploads/bodyweight-male-dips-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        장비 위에 팔을 고정한 상태로 몸을 잡습니다.</li>
+                    <li> 무릎은 뒷부분으로 굽혀 몸이 일자가 되게끔 중심을 잡습니다.</li>
+                    <li>팔꿉치가 직각이 될때까지 내려갔다 올라옵니다.</li>
+        
+                </ol>
+              
+            </div>
+
+            
+            </div>
+
+            <div>
+                <h2 class="routine_name">삼두루틴B</h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>5set</span>
+                </h3>
+                <div class="first-workout">
+                  <div class="workout-title">
+                      <h3>
+          <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                          <span class="mw-headline">
+                              바벨 라잉 트라이셉스 익스텐션
+                      </span>
+                      </h3>
+                  </div>
+                  <div class="workout-video">
+                      <img src="https://www.musclewiki.com/media/uploads/male-barbell-laying-tricep-extensions-front.gif"/>
+                      <img src= "https://www.musclewiki.com/media/uploads/male-barbell-laying-tricep-extensions-side.gif"/>
+          
+                  </div>
+          
+          
+                  <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                      <li>
+                          평평한 벤치에 누워 어깨 너비의 그립으로 바벨을 잡습니다.</li>
+                      <li>바벨이 가슴 바로 위에 올 때까지 팔꿈치를 완전히 펴십시오.</li>
+                      <li>팔꿈치를 구부리기 시작하고 바벨이 이마에 거의 닿도록 합니다.</li>
+                      <li>팔꿈치를 다시 시작 위치로 뻗고 반복합니다.</li>
+          
+          
+                  </ol>
+          
+              </div>
+          
+  
+              <div class="first-workout">
+                  <div class="workout-title">
+                      <h3>
+          <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                          <span class="mw-headline">
+                              케이블 푸시다운
+                      </span>
+                      </h3>
+                  </div>
+                  <div class="workout-video">
+                      <img src="https://www.musclewiki.com/media/uploads/cable-male-pushdown-front.gif"/>
+                      <img src= "https://www.musclewiki.com/media/uploads/cable-male-pushdown-side.gif"/>
+          
+                  </div>
+          
+          
+                  <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                      <li>케이블 바를 적당한 너비로 손등이 위로 가게 잡습니다.</li>
+                      <li> 팔꿈치를 옆구리에 고정시킵니다.</li>
+                      <li>  삼두근에 자극이 가는 것을 느끼면서 팔꿈치를 폅니다.</li>
+                      <li> 케이블의 돌아가려는 힘을 저지하면서 천천히 팔꿈치를 90도 정도까지 구부립니다.</li>
+          
+          
+          
+                  </ol>
+                  
+              </div>
+
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            밴드 오버헤드 트라이셉스 익스텐션
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/band-male-ohtriext-side.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/band-male-ohtriext-front.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>밴드에 한 발 또는 두 발로 서십시오. 밴드와 함께 머리 위로 올라가 시작 위치로 이동합니다./li>
+                    <li> 팔꿈치를 구부리고 펴십시오.</li>
+               
+        
+                </ol>
+                
+            </div>
+          
+         
+              </div>
+
+              <div>
+                <h2 class="routine_name">삼두루틴C</h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>5set</span>
+                </h3>
+
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                딥스
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://musclewiki.com/media/uploads/bodyweight-male-dips-front.gif"/>
+                        <img src= "https://musclewiki.com/media/uploads/bodyweight-male-dips-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            장비 위에 팔을 고정한 상태로 몸을 잡습니다.</li>
+                        <li> 무릎은 뒷부분으로 굽혀 몸이 일자가 되게끔 중심을 잡습니다.</li>
+                        <li>팔꿉치가 직각이 될때까지 내려갔다 올라옵니다.</li>
+            
+                    </ol>
+                  
+                </div>
+
+                <div class="first-workout">
+                  <div class="workout-title">
+                      <h3>
+          <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                          <span class="mw-headline">
+                              바벨 라잉 트라이셉스 익스텐션
+                      </span>
+                      </h3>
+                  </div>
+                  <div class="workout-video">
+                      <img src="https://www.musclewiki.com/media/uploads/male-barbell-laying-tricep-extensions-front.gif"/>
+                      <img src= "https://www.musclewiki.com/media/uploads/male-barbell-laying-tricep-extensions-side.gif"/>
+          
+                  </div>
+          
+          
+                  <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                      <li>
+                          평평한 벤치에 누워 어깨 너비의 그립으로 바벨을 잡습니다.</li>
+                      <li>바벨이 가슴 바로 위에 올 때까지 팔꿈치를 완전히 펴십시오.</li>
+                      <li>팔꿈치를 구부리기 시작하고 바벨이 이마에 거의 닿도록 합니다.</li>
+                      <li>팔꿈치를 다시 시작 위치로 뻗고 반복합니다.</li>
+          
+          
+                  </ol>
+          
+              </div>
+          
+  
+              <div class="first-workout">
+                  <div class="workout-title">
+                      <h3>
+          <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                          <span class="mw-headline">
+                        케이블 스컬 크러셔
+                      </span>
+                      </h3>
+                  </div>
+                  <div class="workout-video">
+                      <img src="https://www.musclewiki.com/media/uploads/cable-male-skullcrusher-side.gif"/>
+                      <img src= "https://www.musclewiki.com/media/uploads/cable-male-skullcrusher-front.gif"/>
+          
+                  </div>
+          
+          
+                  <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                      <li>스트레이트 바, 로프, 이지 바 또는 두 개의 핸들을 사용할 수 있습니다. 케이블은 기기 상단까지 완전히 설치해야 합니다.</li>
+                      <li> 팔꿈치를 위로 향하게 하고 머리 바로 뒤에 부착물을 사용하여 기계와 반대 방향을 향합니다.</li>
+                      <li> 삼두근의 수축을 느낄 때까지 팔꿈치를 펴고 팔꿈치를 구부려 시작 위치로 되돌립니다.</li>
+
+          
+          
+                  </ol>
+                  
+              </div>
+          
+         
+              </div>
+
+
+
+        
+            
+            </div>
+
+
+          
+
+          <div id="traps_routine">
+            <div>
+              <h2 class="routine_name">승모근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 실버백 슈러그
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/barbell-male-silverbackshrug-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/barbell-male-silverbackshrug-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양발을 어깨너비로 벌리고 서서 양손으로 바벨을 어깨너비 바로 앞으로 잡는다.</li>
+                    <li> 허리를 곧게 유지하면서 무릎을 약간 구부린 상태에서 엉덩이를 앞으로 구부립니다.</li>
+                    <li> 어깨뼈를 서로 만지려는 것처럼 맞물립니다.</li>
+                    <li>   어깨를 으쓱해 보세요.</li>
+                </ol>
+        
+        
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 슈러그
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-shrug-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-shrug-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>두 개의 덤벨로 높이 서십시오. 견갑골을 위로 당깁니다. </li>
+                    <li>1초 동안 상단을 누르십시오.</li>
+        
+                        
+                </ol>
+        
+        
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">승모근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 실버백 슈러그
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/barbell-male-silverbackshrug-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/barbell-male-silverbackshrug-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양발을 어깨너비로 벌리고 서서 양손으로 바벨을 어깨너비 바로 앞으로 잡는다.</li>
+                    <li> 허리를 곧게 유지하면서 무릎을 약간 구부린 상태에서 엉덩이를 앞으로 구부립니다.</li>
+                    <li> 어깨뼈를 서로 만지려는 것처럼 맞물립니다.</li>
+                    <li>   어깨를 으쓱해 보세요.</li>
+                </ol>
+        
+        
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 업라이트 로우
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-upright-row-front_3ROsKgm.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-upright-row-side_NBzD3il.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        대략 어깨 너비로 더블 오버핸드 그립을 잡습니다.</li>
+                    <li> 팔꿈치를 천장 위로 똑바로 당깁니다. 바를 턱 높이 또는 약간 더 높게 잡는 것을 목표로 하십시오.</li>
+             
+                </ol>
+            
+        
+            </div>
+
+       
+            </div>
+
+    
+          </div>
+
+          <div id="shoulders_routine">
+
+            <div>
+                <h2 class="routine_name">초보자를 위한 어깨 루틴
+                </h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>4set</span>
+                </h3>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                시티드 덤벨 숄더 프레스
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-seated-shoulder-press-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-seated-shoulder-press-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>등을 지원하는 벤치에 앉으십시오.손바닥으로 덤벨을 어깨 높이로 올리십시오.</li>
+                        <li>덤벨을 위쪽으로 올리고 일정 위치에서 일시 중지합니다.</li>
+                        <li>무게를 다시 시작 위치로 낮춥니다.</li>
+            
+                            
+            
+                    
+                    </ol>
+            
+            
+            
+                </div>
+                
+  
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                밴드 프론트 레이즈
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/band-male-frontraise-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/band-male-frontraise-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            원하는 밴드의 무게에 따라 1피트 또는 2피트로 밴드에 서십시오.</li>
+                        <li>팔꿈치를 쭉 뻗은 상태에서 주먹이 눈높이가 될 때까지 천장까지 똑바로 들어 올립니다.</li>
+                   
+            
+                    
+                    </ol>
+            
+                </div>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                케이블 오버헤드 프레스
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/cable-male-ohp-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/cable-male-ohp-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            케이블이 기계 바닥에 고정된 상태로 손잡이 부착물을 사용하십시오. 등을 평평하게 유지하면서 똑바로 섭니다. 시작 위치는 손바닥이 앞을 향하도록 합니다.</li>
+                        <li>팔꿈치와 어깨를 사용하여 무게를 머리 위로 직접 누르십시오.</li>
+                   
+            
+                    
+                    </ol>
+            
+                </div>
+              
+              </div>
+            <div>
+              <h2 class="routine_name">어깨루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 오버헤드 프레스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-overhead-press-front_OJMNLxU.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-overhead-press-side_rFqqcjI.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        대략 어깨 너비의 그립을 잡습니다. 팔꿈치에서 주먹(수직 팔뚝)까지 직선이 있어야 합니다.</li>
+                    <li> 턱을 뒤로 당기고 팔꿈치 관절에서 확장하고 어깨 관절에서 굴곡하여 천장을 향해 무게를 누릅니다.</li>
+                    <li> 팔꿈치가 펴질 때까지 누르고 머리를 앞으로 살짝 밀어줍니다.</li>
+                    <li> 컨트롤을 사용하여 시작 위치로 돌아갑니다. 바가 얼굴을 안전하게 통과할 수 있도록 턱을 뒤로 당깁니다.</li>
+        
+                   
+                </ol>
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            시티드 덤벨 숄더 프레스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-seated-shoulder-press-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-seated-shoulder-press-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>등을 지원하는 벤치에 앉으십시오.손바닥으로 덤벨을 어깨 높이로 올리십시오.</li>
+                    <li>덤벨을 위쪽으로 올리고 일정 위치에서 일시 중지합니다.</li>
+                    <li>무게를 다시 시작 위치로 낮춥니다.</li>
+        
+                        
+        
+                
+                </ol>
+        
+        
+        
+            </div>
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            프론트 레터럴 레이즈
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src=" https://www.musclewiki.com/media/uploads/male-dumbbell-front-raise-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-front-raise-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li> 덤벨을 들고 어깨너비만큼 섭니다.</li>
+                    <li>팔을 들어올릴때 주먹이 눈높이까지 오게합니다.</li>
+                    <li>내려갈때도 올릴때와 같은힘으로 속도를 일정하게합니다.</li>
+        
+                        
+        
+                
+                </ol>
+        
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">어깨루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>5set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            시티드 덤벨 숄더 프레스
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-seated-shoulder-press-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-seated-shoulder-press-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>등을 지원하는 벤치에 앉으십시오.손바닥으로 덤벨을 어깨 높이로 올리십시오.</li>
+                    <li>덤벨을 위쪽으로 올리고 일정 위치에서 일시 중지합니다.</li>
+                    <li>무게를 다시 시작 위치로 낮춥니다.</li>
+        
+                        
+        
+                
+                </ol>
+        
+        
+        
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 프론트 레이즈
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-front-raise-front_RigZY4S.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-front-raise-side_tbJG13x.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바벨을 오버핸드 그립으로 잡고 높이 서십시오. 주먹이 눈 높이에 올 때까지 팔을 들어 올리십시오.</li>
+                    <li>통제하에 시작으로 돌아갑니다. 이 운동은 피로를 느끼기 시작할 때 운동량을 사용하는 경향이 있습니다.</li>
+                   
+                </ol>
+              
+            </div>
+        
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            벤트오버 레터럴 레이즈
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-rear-delt-fly-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-rear-delt-fly-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        덤벨이 위쪽이 앞을 보게 해준 상태로 쥐고 있습니다. 시선은 바닥을 보고 가슴을 살짝 내밀어줍니다.</li>
+                    <li>팔꿈치가 바깥으로 나가도록 외회전된 상태에서 팔을 벌려줍니다.</li>
+                    <li>덤벨이 어깨이상 올라가지 않게하며 천천히 시작위치로 되돌립니다.</li>
+        
+                </ol>
+        
+        
+            </div>
+
+       
+            </div>
+
+            <div>
+                <h2 class="routine_name">어깨루틴C</h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>5set</span>
+                </h3>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                사이드 레터럴 레이즈
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-lateral-raise-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-lateral-raise-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            양쪽에 덤벨을 들고 섭니다.</li>
+                        <li>팔꿈치가 바닥과 평행을 이룰 때까지 팔꿈치에 약간의 구부러진 상태에서 양쪽에 팔을 들어 올리십시오.</li>
+                        <li> 팔을 천천히 시작 위치로 되돌립니다.</li>
+                    
+                    </ol>
+            
+            
+            
+                </div>
+  
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                프론트 레터럴 레이즈
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src=" https://www.musclewiki.com/media/uploads/male-dumbbell-front-raise-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-front-raise-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li> 덤벨을 들고 어깨너비만큼 섭니다.</li>
+                        <li>팔을 들어올릴때 주먹이 눈높이까지 오게합니다.</li>
+                        <li>내려갈때도 올릴때와 같은힘으로 속도를 일정하게합니다.</li>
+            
+                            
+            
+                    
+                    </ol>
+            
+            
+                </div>
+          
+              <div class="first-workout">
+                  <div class="workout-title">
+                      <h3>
+          <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                          <span class="mw-headline">
+                              벤트오버 레터럴 레이즈
+                      </span>
+                      </h3>
+                  </div>
+                  <div class="workout-video">
+                      <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-rear-delt-fly-front.gif"/>
+                      <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-rear-delt-fly-side.gif"/>
+          
+                  </div>
+          
+          
+                  <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                      <li>
+                          덤벨이 위쪽이 앞을 보게 해준 상태로 쥐고 있습니다. 시선은 바닥을 보고 가슴을 살짝 내밀어줍니다.</li>
+                      <li>팔꿈치가 바깥으로 나가도록 외회전된 상태에서 팔을 벌려줍니다.</li>
+                      <li>덤벨이 어깨이상 올라가지 않게하며 천천히 시작위치로 되돌립니다.</li>
+          
+                  </ol>
+          
+          
+              </div>
+  
+         
+              </div>
+
+    
+          </div>
+
+          <div id="biceps_routine">
+
+            <div>
+                <h2 class="routine_name">초보자를 위한 이두 루틴
+                </h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>4set</span>
+                </h3>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                인버티드 로우
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-reverse-row-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-reverse-row-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            고정된 수평 바 아래에 놓고 넓은 오버핸드 그립으로 바를 잡습니다.</li>
+                        <li>몸을 바까지 똑바로 당깁니다.</li>
+                        <li>  팔을 완전히 펴서 시작 위치로 돌아갑니다. 반복하다.</li>
+                    
+                    </ol>
+            
+                </div>
+  
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                밴드 컬
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-curl-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-band-curl-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            밴드를 낮은 앵커 포인트에 부착합니다. 손바닥을 똑바로 향하게하십시오.</li>
+                        <li>이두근이 수축하는 것을 느낄 때까지 팔꿈치를 구부립니다. 그런 다음 팔꿈치를 완전히 펴십시오.</li>
+            
+                    
+                    </ol>
+            
+                </div>
+  
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                밴드 해머 컬
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-band-hammer-curl-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-band-hammer-curl-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>밴드를 낮은 앵커 포인트에 부착합니다. 중립 그립을 사용하십시오.</li>
+                        <li> 이두근이 수축하는 것을 느낄 때까지 팔꿈치를 구부립니다. 그런 다음 팔꿈치를 완전히 펴십시오.</li>
+                    
+            
+                            
+                      
+                    </ol>
+            
+            
+                </div>
+            
+          
+              
+              </div>
+            <div>
+              <h2 class="routine_name">이두루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-curl-front_uKPCb8P.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-curl-side_NN1ZFmi.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        상완을 고정한 상태에서 숨을 내쉬면서 이두근을 수축하면서 무게를 앞으로 구부립니다.</li>
+                    <li>이두근이 완전히 수축되고 바가 어깨 높이에 올 때까지 움직임을 계속하십시오.</li>
+                    <li>  수축된 자세를 잠시 유지하고 이두근을 세게 쥐십시오.</li>
+                    <li> 천천히 무게를 시작 위치로 되돌립니다.</li>
+        
+                
+                </ol>
+                
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-curl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-curl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양 손에 팔 길이만큼 덤벨을 들고 똑바로 서십시오.</li>
+                    <li>하나의 덤벨을 들어 올리고 팔뚝이 수직이되고 손바닥이 어깨를 향할 때까지 비틀십시오.</li>
+                    <li> 원래 위치로 낮추고 반대쪽 팔로 반복합니다.</li>
+                
+                </ol>
+        
+        
+            </div>
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 해머컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-hammercurl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-hammercurl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>중성 그립 (천장을 향한 엄지 손가락)으로 덤벨을 잡고 있습니다.</li>
+                    <li> 덤벨을 천천히 가슴 높이까지 들어 올리십시오.</li>
+                    <li>시작 위치로 돌아가서 반복합니다.</li>
+        
+                        
+                  
+                </ol>
+        
+        
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">이두루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            친 업
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-chinup-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-chinup-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바를 어깨너비로 벌리고 앙와위 그립(손바닥이 당신을 향함)으로 잡습니다.</li>
+                    <li> 몸을 매달고 팔을 완전히 뻗은 상태에서 턱이 바를 지나갈 때까지 몸을 위로 당깁니다.</li>
+                    <li> 천천히 시작 위치로 돌아갑니다. 반복하다.</li>
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            바벨 컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-barbell-curl-front_uKPCb8P.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-barbell-curl-side_NN1ZFmi.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        상완을 고정한 상태에서 숨을 내쉬면서 이두근을 수축하면서 무게를 앞으로 구부립니다.</li>
+                    <li>이두근이 완전히 수축되고 바가 어깨 높이에 올 때까지 움직임을 계속하십시오.</li>
+                    <li>  수축된 자세를 잠시 유지하고 이두근을 세게 쥐십시오.</li>
+                    <li> 천천히 무게를 시작 위치로 되돌립니다.</li>
+        
+                
+                </ol>
+                
+            </div>
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 리버스 컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-reverse-curl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-reverse-curl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        회내(오버핸드) 그립으로 덤벨을 잡습니다. 손목에 더 편안하다면 이 운동을 엄지손가락 없이 할 수 있습니다.</li>
+                    <li> 팔뚝이 팔뚝에 닿을 때까지 팔꿈치를 구부립니다. 팔꿈치가 바깥쪽으로 벌어지지 않도록 합니다.</li>
+                 
+                </ol>
+            </div>
+
+       
+            </div>
+
+            <div>
+                <h2 class="routine_name">이두루틴C</h2>
+                <h3 class="exercise_count">
+                  <span>12~15회</span>
+                  <span>X</span>
+                <span>4set</span>
+                </h3>
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                덤벨 컬
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-curl-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-curl-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            양 손에 팔 길이만큼 덤벨을 들고 똑바로 서십시오.</li>
+                        <li>하나의 덤벨을 들어 올리고 팔뚝이 수직이되고 손바닥이 어깨를 향할 때까지 비틀십시오.</li>
+                        <li> 원래 위치로 낮추고 반대쪽 팔로 반복합니다.</li>
+                    
+                    </ol>
+            
+            
+                </div>
+          
+  
+                <div class="first-workout">
+                    <div class="workout-title">
+                        <h3>
+            <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                            <span class="mw-headline">
+                                바벨 리버스 컬
+                        </span>
+                        </h3>
+                    </div>
+                    <div class="workout-video">
+                        <img src="https://www.musclewiki.com/media/uploads/male-barbell-reversecurl-front.gif"/>
+                        <img src= "https://www.musclewiki.com/media/uploads/male-barbell-reversecurl-side.gif"/>
+            
+                    </div>
+            
+            
+                    <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                        <li>
+                            어깨 너비 정도의 더블 오버핸드 그립을 잡습니다. 팔꿈치를 안쪽으로 밀어넣은 상태에서 팔꿈치를 구부립니다. 튀어나오지 않도록 하십시오.</li>
+                        <li> 팔뚝이 이두근에 닿을 때까지 컬하십시오. 그런 다음 각 반복의 맨 아래에서 팔꿈치를 완전히 펴십시오.</li>
+                
+                    </ol>
+                </div>
+
+              <div class="first-workout">
+                  <div class="workout-title">
+                      <h3>
+          <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                          <span class="mw-headline">
+                              덤벨 리버스 컬
+                      </span>
+                      </h3>
+                  </div>
+                  <div class="workout-video">
+                      <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-reverse-curl-front.gif"/>
+                      <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-reverse-curl-side.gif"/>
+          
+                  </div>
+          
+          
+                  <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                      <li>
+                          회내(오버핸드) 그립으로 덤벨을 잡습니다. 손목에 더 편안하다면 이 운동을 엄지손가락 없이 할 수 있습니다.</li>
+                      <li> 팔뚝이 팔뚝에 닿을 때까지 팔꿈치를 구부립니다. 팔꿈치가 바깥쪽으로 벌어지지 않도록 합니다.</li>
+                   
+                  </ol>
+              </div>
+
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            케이블 리버스 컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-cable-reverse-curl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-cable-reverse-curl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        손잡이 부착물을 사용하십시오. 케이블은 기기 바닥까지 완전히 설치해야 합니다.</li>
+                    <li> 케이블 머신에서 멀어지게 합니다. 더 나은 지지 기반을 확보할 수 있도록 자세를 비틀어 보세요.</li>
+                    <li> 바닥을 아래로 향하게 합니다. 팔꿈치를 구부리고 펴십시오.</li>
+                
+                </ol>
+            </div>
+  
+         
+              </div>
+
+    
+          </div>
+
+          <div id="forearms_routine">
+            <div>
+              <h2 class="routine_name">전완근루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-curl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-curl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        양 손에 팔 길이만큼 덤벨을 들고 똑바로 서십시오.</li>
+                    <li>하나의 덤벨을 들어 올리고 팔뚝이 수직이되고 손바닥이 어깨를 향할 때까지 비틀십시오.</li>
+                    <li> 원래 위치로 낮추고 반대쪽 팔로 반복합니다.</li>
+                
+                </ol>
+        
+        
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 해머컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-hammercurl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-hammercurl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>중성 그립 (천장을 향한 엄지 손가락)으로 덤벨을 잡고 있습니다.</li>
+                    <li> 덤벨을 천천히 가슴 높이까지 들어 올리십시오.</li>
+                    <li>시작 위치로 돌아가서 반복합니다.</li>
+        
+                        
+                  
+                </ol>
+        
+        
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">전완근루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            덤벨 해머컬
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-dumbbell-hammercurl-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-dumbbell-hammercurl-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>중성 그립 (천장을 향한 엄지 손가락)으로 덤벨을 잡고 있습니다.</li>
+                    <li> 덤벨을 천천히 가슴 높이까지 들어 올리십시오.</li>
+                    <li>시작 위치로 돌아가서 반복합니다.</li>
+        
+                        
+                  
+                </ol>
+        
+        
+        
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            친 업
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/bodyweight-male-chinup-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/bodyweight-male-chinup-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        바를 어깨너비로 벌리고 앙와위 그립(손바닥이 당신을 향함)으로 잡습니다.</li>
+                    <li> 몸을 매달고 팔을 완전히 뻗은 상태에서 턱이 바를 지나갈 때까지 몸을 위로 당깁니다.</li>
+                    <li> 천천히 시작 위치로 돌아갑니다. 반복하다.</li>
+                </ol>
+            </div>
+
+       
+            </div>
+
+    
+          </div>
+         
+
+          <div id="calves_routine">
+            <div>
+              <h2 class="routine_name">종아리루틴A</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            종아리 스트레칭-1
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-strech-21-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-strech-21-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        발 뒤꿈치가 바닥에 닿은 상태에서 발의 공을 벽에 대십시오. 어깨 앞의 벽에 손을 대십시오.</li>
+                    <li>무릎을 똑바로 유지하고 천천히 벽쪽으로 기울고 종아리 근육을 통해 확장되는 스트레칭을 느낄 때 몇 초 동안 멈춥니다.</li>
+                    <li> 시작 위치로 돌아가 다른 다리로 스트레칭을 반복합니다.</li>
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            종아리 스트레칭-2
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-strech-20-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-strech-20-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        두 발을 바닥에 평평하게 놓고 한 다리를 어깨 앞에 놓고 다른 다리는 다른 어깨 뒤에 이 위치를 미러링해야 합니다. 시작자세에서 양쪽 무릎이 일직선이어야 합니다.</li>
+                    <li>손바닥을 어깨 높이로 벽에 대고 벽을 향해 기대고 뒷다리는 똑바로 유지하면서 앞다리를 무릎에서 구부립니다.</li>
+                    <li> 스트레칭의 정점에서 일시 중지하고 시작 위치로 돌아갑니다. 다리의 위치를 ​​바꿔서 반복합니다.</li>
+                </ol>
+        
+            </div>
+        
+            
+            </div>
+
+            <div>
+              <h2 class="routine_name">종아리루틴B</h2>
+              <h3 class="exercise_count">
+                <span>12~15회</span>
+                <span>X</span>
+              <span>4set</span>
+              </h3>
+              <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            종아리 스트레칭-1
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-strech-21-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-strech-21-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        발 뒤꿈치가 바닥에 닿은 상태에서 발의 공을 벽에 대십시오. 어깨 앞의 벽에 손을 대십시오.</li>
+                    <li>무릎을 똑바로 유지하고 천천히 벽쪽으로 기울고 종아리 근육을 통해 확장되는 스트레칭을 느낄 때 몇 초 동안 멈춥니다.</li>
+                    <li> 시작 위치로 돌아가 다른 다리로 스트레칭을 반복합니다.</li>
+                </ol>
+            </div>
+        
+
+            <div class="first-workout">
+                <div class="workout-title">
+                    <h3>
+        <!--            <span class="mw-headline" id="Barbell-Bench-Press">-->
+                        <span class="mw-headline">
+                            종아리 스트레칭-2
+                    </span>
+                    </h3>
+                </div>
+                <div class="workout-video">
+                    <img src="https://www.musclewiki.com/media/uploads/male-strech-20-front.gif"/>
+                    <img src= "https://www.musclewiki.com/media/uploads/male-strech-20-side.gif"/>
+        
+                </div>
+        
+        
+                <ol class="steps-list" style="margin: 4rem 0 1rem;">
+                    <li>
+                        두 발을 바닥에 평평하게 놓고 한 다리를 어깨 앞에 놓고 다른 다리는 다른 어깨 뒤에 이 위치를 미러링해야 합니다. 시작자세에서 양쪽 무릎이 일직선이어야 합니다.</li>
+                    <li>손바닥을 어깨 높이로 벽에 대고 벽을 향해 기대고 뒷다리는 똑바로 유지하면서 앞다리를 무릎에서 구부립니다.</li>
+                    <li> 스트레칭의 정점에서 일시 중지하고 시작 위치로 돌아갑니다. 다리의 위치를 ​​바꿔서 반복합니다.</li>
+                </ol>
+        
+            </div>
+
+       
+            </div>
+
+    
+          </div>
+            
+          </div>
+
+  
+   
+
+      
+
+
+    
+
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

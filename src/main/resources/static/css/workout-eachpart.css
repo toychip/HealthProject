@@ -25,7 +25,14 @@
     justify-content: center;
 }
 .workout-video img{
-    margin-right: 50px;
+    margin: 0px 40px;
+    width:700px;
+    height: 340px;
+    object-fit: cover;
+  
+  
+
+
 }
 
 .workout-methods {

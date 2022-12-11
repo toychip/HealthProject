@@ -20,7 +20,7 @@ public class MemberDTO {
     private int deadlift;
     private int squat;
     private int bigthree;
-    private String tiername;
+
 
 
     public static MemberDTO toMemberDTO(MemberEntity memberEntity) {
@@ -35,7 +35,7 @@ public class MemberDTO {
         memberDTO.setDeadlift(memberEntity.getDeadlift());
         memberDTO.setSquat(memberEntity.getSquat());
         memberDTO.setBigthree(memberEntity.getBigthree());
-        memberDTO.setTiername(memberEntity.getTiername());
+
         return memberDTO;
     }
 }

@@ -10,9 +10,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller
@@ -34,13 +32,21 @@ public class BoardController {
     @PostMapping("/board/writepro") // ("/board/writepro")가 들어온다면, 아래를 실행해라
     // html form 태그와 일치해야함
     // public String boardWritePro(String title, String content) 매개변수가 많아지면 귀찮아짐. 클래스로 한번에 해결
-    public String boardWritePro(Board board, Model model, MultipartFile file) throws Exception {
+    public String boardWritePro(@RequestParam(value = "writer") String writer, Board board, Model model, MultipartFile file) throws Exception {
 
+//        Boardfree boardwriter = new Boardfree();
+
+        board.setWriter(writer);
+        model.addAttribute("writer", writer);
         boardService.write(board, file);
 
         //    boardService.write(board); 이렇게 주입을 해줘야하는데 controller 입장에선 boardService.write(board);가 무엇인지 모름
         //        return "redirect:/board/list";
 
+//        String writer = (String) session.getAttribute("userNickname");
+//        Boardfree boardWriter = boardWriter.setWriter(writer);
+//
+//        model.addAttribute("userNickname");
         model.addAttribute("message", "글 작성이 완료되었습니다.");
         model.addAttribute("searchUrl", "/board/list");
         // model에 담겨서 message.html에 보내줌

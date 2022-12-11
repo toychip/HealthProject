@@ -24,6 +24,16 @@ public class Board {
     private String content; // 게시글 내용
     private String filename;
     private String filepath;
-//    private LocalDateTime createdDate;
+    private String writer;
+
+    public String getWriter() {
+        return writer;
+    }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
+    //    private LocalDateTime createdDate;
 //    private LocalDateTime modifiedDate;
 }

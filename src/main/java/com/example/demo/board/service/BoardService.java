@@ -25,7 +25,7 @@ public class BoardService {
 
 
     public void write(Board board, MultipartFile file) throws Exception{
-    // 글 작성 처리
+        // 글 작성 처리
         String projectPath = System.getProperty("user.dir") + "//src//main//resources//static//files"; // 프로젝트 경로 지정
         UUID uuid = UUID.randomUUID();                                      // 식별자, 랜덤으로 이름 생성
         String fileName = uuid + "_" + file.getOriginalFilename();    // 랜덤으로 만든 것 뒤에 _와 원래의 파일 이름을 붙여줌
@@ -52,7 +52,7 @@ public class BoardService {
     public Board boardView(Integer id){
         //특정 게시글 불러오기 id번 게시물, 1번 게시물 등등
 
-     return boardRepository.findById(id).get();
+        return boardRepository.findById(id).get();
     }
 
     public void boardDelete(Integer id){

@@ -40,19 +40,6 @@ public class MemberEntity {
     @Column(columnDefinition = "int (20) default 0 ")
     private int bigthree;
 
-    @Column(columnDefinition = "VARCHAR (255) default '이것은 !!!' ")
-    private String tiername;
-
-
-
-
-
-//    private enum rating_list{
-//        Iron, Bronze, Silver, Gold, Platinum, Diamond, Master, Grandmaster, challenger
-//    }
-
-
-
 
     public static MemberEntity toMemberEntity(MemberDTO memberDTO) {
         MemberEntity memberEntity = new MemberEntity();
@@ -65,7 +52,7 @@ public class MemberEntity {
         memberEntity.setDeadlift(memberDTO.getDeadlift());
         memberEntity.setSquat(memberDTO.getSquat());
         memberEntity.setBigthree(memberDTO.getBigthree());
-        memberEntity.setTiername(memberDTO.getTiername());
+
         return memberEntity;
     }
 
@@ -81,7 +68,7 @@ public class MemberEntity {
         memberEntity.setDeadlift(memberDTO.getDeadlift());
         memberEntity.setSquat(memberDTO.getSquat());
         memberEntity.setBigthree(memberDTO.getBigthree());
-        memberEntity.setTiername(memberDTO.getTiername());
+
         return memberEntity;
     }
 }

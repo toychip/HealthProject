@@ -10,52 +10,23 @@
 
 
 
-  .buttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 60px; 
-  }
 
-  .time-workout-kinds div{
-    display: flex;
-    justify-content:center;
- 
-
-}
-.time-workout-kinds{
-  margin-top:30px;
-  margin-bottom: 120px;
-
-
-}
-
-.time-workout-kinds button{
-
-  margin-top: 10px;
-  margin-right: 10px;
-}
-.time-workout-kinds p{
-  margin-top: 20px;
-}
-
-
-
-.text-white{
-  color: white;
-}
-
-.time-title{
-  margin-top: 20px;
-}
-#time-15m,
-#time-30m,
-#time-1,
-#time-90m,
-#time-2,
-#time-150m{
+.xxx{
   position: relative;
-  left: 200px;
-  top: 40px;
-  padding: 10px;
+  left:140px;
+
+}
+
+.routine_name{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.zz{
+  z-index: 9999;
+}
+
+#nodivision_routine h1,#twodivision_routine h1,#threedivision_routine h1,#fourdivision_routine h1,
+ #m15_routine h1,  #m30_routine h1,  #m60_routine h1,  #m90_routine h1{
+  font-size: 50px;
 }

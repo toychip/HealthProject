@@ -12,13 +12,13 @@
 <body>
 <nav class="navbars navbar-light bg-light screen-header">
     <div class="title">
-        <a class="navbar-brand" href="master-main">
-            득근득근💪
+        <a class="navbar-brand">
+            <img src="/picture/capstone2img.png" width=120px/>
         </a>
     </div>
 
     <div class="more-functions">
-        <a class="signin navbar-brand" href="community-free">
+        <a class="signin navbar-brand" href="/board/list">
             <span>커뮤니티</span>
         </a>
         <a class="signup navbar-brand" href="routine-time">
@@ -41,23 +41,16 @@
         </a>
 
     </div>
+    <div class="signin-up">
 
-<!--    <div class="signin-up">-->
-<!--        <a class="signin navbar-brand" href="signin">-->
-<!--            <span>로그인</span>-->
-<!--        </a>-->
-<!--        <a class="signup navbar-brand" href="signup">-->
-<!--            <span>회원가입</span>-->
-<!--        </a>-->
 
-<!--    </div>-->
+        <a class="signup navbar-brand" href="mypage">
+            <span>마이페이지</span>
+        </a>
+        <h2 th:text="${session.loginNickname}"></h2>
 
+    </div>
 </nav>
-
-
-
-
-
 
 <div class="community-title">
     <h3>랭킹🏆</h3>
@@ -66,7 +59,7 @@
 <div class="rank-btns" role="group" aria-label="Basic outlined example">
     <a href="rank-whole"> <button type="button" class="btn btn-outline-primary active ">전체랭킹</button></a>
 
-    <a class="rank-challenge navbar-brand" href="community-challenge">
+    <a class="rank-challenge navbar-brand" href="/board/list">
         <span class="big-three-challenge">3대도전하기!</span>
     </a>
 </div>
@@ -79,17 +72,49 @@
 
         <tr>
             <th>랭킹</th>
+            <th>티어</th>
             <th>닉네임</th>
             <th>3대 총합</th>
             <th>벤치프레스</th>
             <th>데드리프트</th>
             <th>스쿼트</th>
+
             <!--    <th>상세조회</th>-->
             <!--    <th>삭제</th>-->
         </tr>
         <tr th:each="member, memberStat : ${memberList}">
-<!--            \${#lists.size(arrList)}-->
             <td th:text="${memberStat.count}"></td>
+
+            <td th:if="${member.bigthree} < 150 and ${member.bigthree} >= 0">
+                <img src="/picture/iron.png" width="35px"/> 아이언</td>
+
+            <td th:if="${member.bigthree} < 200 and ${member.bigthree} >= 150">
+                <img src="/picture/bronze.png" width="35px"/> 브론즈</td>
+
+            <td th:if="${member.bigthree} < 250 and ${member.bigthree} >= 200">
+                <img src="/picture/silver.png" width="35px"/> 실버</td>
+
+            <td th:if="${member.bigthree} < 300 and ${member.bigthree} >= 250">
+                <img src="/picture/gold.png" width="35px"/> 골드</td>
+
+            <td th:if="${member.bigthree} < 350 and ${member.bigthree} >= 300">
+                <img src="/picture/platinum.png" width="35px"/> 플레티넘</td>
+
+            <td th:if="${member.bigthree} < 400 and ${member.bigthree} >= 350">
+                <img src="/picture/diamond.png" width="25px"/> 다이아</td>
+
+            <td th:if="${member.bigthree} < 450 and ${member.bigthree} >= 400">
+                <img src="/picture/master.png" width="35px"/> 마스터</td>
+
+            <td th:if="${member.bigthree} < 500 and ${member.bigthree} >= 450">
+                <img src="/picture/grandmaster.png" width="35px"/> 그랜드마스터</td>
+
+            <td th:if="${member.bigthree} >= 500">
+                <img src="/picture/challenger.png" width="35px"/> 첼린저</td>
+
+
+
+
             <td th:text="${member.username}"></td>
             <td th:text="${member.bigthree}"></td>
             <td th:text="${member.benchpress}"></td>

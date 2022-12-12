@@ -3,6 +3,7 @@
         background: url("https://photo.coolenjoy.co.kr/data/editor/2204/c304745b665f46824624641636edaaeca2a46a81.png")  center top repeat;
         overflow: inherit;
         height: 100%;
+        background-size: cover;
     }
     #introWrap .inner {
         max-width: 1400px;
@@ -64,16 +65,20 @@
         background-color: tomato;
         opacity: 0.8;
     }
-    
+
     .link-btn ul li a.link05 {
         background-color: violet;
         opacity: 0.8;
     }
-   
-    .logo h1{
-        padding: 30px;
-    }
+
 
     .head{
         padding: 0;
+    }
+    .site_name{
+        position: relative;
+        padding: 10px;
+        left:580px;
+        margin-bottom: 100px;
+
     }

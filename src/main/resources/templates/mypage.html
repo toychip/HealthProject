@@ -13,7 +13,6 @@
 <nav class="navbars navbar-light bg-light screen-header">
   <div class="title">
     <a class="navbar-brand">
-      <!--      <a class="navbar-brand" href="master-main">-->
       <img src="/picture/capstone2img.png" width=120px/>
     </a>
   </div>
@@ -39,22 +38,8 @@
       숙련자🤴
     </a>
   </div>
-  <!--  <div class="signin-up">-->
-  <!--    <a class="signin navbar-brand" href="mypage">-->
-  <!--      <span>마이페이지</span>-->
-  <!--    </a>-->
-  <!--    <a class="signup navbar-brand" href="signup">-->
-  <!--      <span>회원가입</span>-->
-  <!--    </a>-->
-  <!--  </div>-->
-</nav>
-<!--<table>-->
-<!--  <tr>-->
-<!--    <th>name</th>-->
-<!--  </tr>-->
-<!--  <span th:text="${session.nickname}"></span>-->
-<!--</table>-->
 
+</nav>
 
 <div class="mypage-main">
   <h1 class="mypage-title">내 정보</h1>
@@ -63,7 +48,6 @@
 
       <h2 th:text="${session.loginNickname}"></h2>
 
-      <!-- <span >내 닉네임</span> -->
     </div>
   </div>
   <div class="main-second-row">
@@ -95,8 +79,7 @@
   <div class="main-third-row">
     <a href="/member/update" class="navbar-brand"><h4>내 정보 수정</h4></a>
     <a href="/member/logout" class="navbar-brand"><h4>로그아웃</h4></a>
-    <!--    <a class="navbar-brand" href="/member/update">내 정보 수정</a>-->
-    <!--    <a class="navbar-brand" href="/member/logout">로그아웃</a>-->
+<!--    <span th:href="@{|/member/delete/${member.id}|}">삭제</span>-->
   </div>
   <div class="container">
     <canvas id="myChart"></canvas>

@@ -77,7 +77,7 @@ public class PageController {
 
     @GetMapping("/member/routine-time")
     public String routine_time() {
-        return "routine-muscle";
+        return "routine-time";
     }
 
     @GetMapping("/member/routine-division")
@@ -87,9 +87,53 @@ public class PageController {
 
     @GetMapping("/member/routine-muscle")
     public String routine_muscle() {
+        return "routine-muscle";
+    }
+
+
+    @GetMapping("/board/routine-time")
+    public String board_routine() {
         return "routine-time";
     }
 
+
+
+
+    @GetMapping("/board/routine-division")
+    public String routine_diivsion() {
+        return "routine-division";
+    }
+
+    @GetMapping("/board/routine-muscle")
+    public String routine_musclle() {
+        return "routine-muscle";
+    }
+
+
+    @GetMapping("/board/record")
+    public String board_record() {
+        return "record";
+    }
+
+    @GetMapping("/board/boardlist")
+    public String list_board_boardlist() {
+        return "boardlist";
+    }
+
+    @GetMapping("member/boardlist")
+    public String member_boardlist_record() {
+        return "boardlist";
+    }
+
+//    @GetMapping("/boardfree/boardfreelist")
+//    public String boardfree_boardlist() {
+//        return "boardlist";
+//    }
+
+//    @GetMapping("/boardfree/boardlist")
+//    public String board_record() {
+//        return "boardlist";
+//    }
 
 }
 

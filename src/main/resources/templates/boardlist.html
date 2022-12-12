@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>득근득근💖-커뮤니티</title>
+    <title>득근득근💖-3대 챌린지</title>
     <link rel="stylesheet" href="/css/style.css"/>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,13 +13,13 @@
 <nav class="navbars navbar-light bg-light screen-header">
     <div class="title">
         <a class="navbar-brand">
-<!--            <a class="navbar-brand" href="master-main">-->
             <img src="/picture/capstone2img.png" width=120px/>
+
         </a>
     </div>
 
     <div class="more-functions">
-        <a class="signin navbar-brand" href="community-free">
+        <a class="signin navbar-brand">
             <span>커뮤니티</span>
         </a>
         <a class="signup navbar-brand" href="routine-time">
@@ -32,6 +32,7 @@
             <span>기록</span>
         </a>
     </div>
+
 
     <div class="change-level">
         <a href="beginner-main" class="navbar-brand">
@@ -53,18 +54,19 @@
 
     </div>
 
+
 </nav>
 
 
-<div class="community-btns">
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <a href="community-free"><button  type="button" class="btn btn-primary">자유게시판</button></a>
-        <a href="community-challenge"><button  type="button" class="btn btn-primary">3대챌린지</button></a>
-        <a href="community-qna"><button  type="button" class="btn btn-primary">QnA</button></a>
-    </div>
+<!-- <div class="community-btns">
+<div class="btn-group" role="group" aria-label="Basic example">
+   <a href="community-free.html"><button  type="button" class="btn btn-primary">자유게시판</button></a>
+   <a href="community-challenge.html"><button  type="button" class="btn btn-primary">3대챌린지</button></a>
+   <a href="community-qna.html"><button  type="button" class="btn btn-primary">QnA</button></a>
+ </div>
 
 
-</div>
+</div> -->
 
 
 
@@ -72,31 +74,8 @@
 
 
     <div class="community-title">
-        <h3>자유게시판🖐</h3>
+        <h3>3대 챌린지💪</h3>
     </div>
-
-    <!--
-<div class="container">
-    <div class="community-search">
-            <div class="community-search-window">
-                <form action="">
-                    <div class="community-search-wrap">
-                        <div class="btn-search">
-                            <select name="search" onchange="">
-                                <option value="title">제목</option>
-                                <option value="user">글쓴이</option>
-                                <option value="no">선택 안함</option>
-                            </select>
-                            <input class="search" type="search" placeholder="검색어를 입력해주세요."/>
-                            <button type="button" class="btn btn-primary">검색</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-    </div>
-</div>
-    -->
 
 
 
@@ -104,7 +83,7 @@
     <form class="community-search" th:action="@{/board/list}" method="get">
         <div class="community-search-wrap">
             <div class="btn-search">
-                <input class="search" type="text" name="searchKeyword" placeholder="검색어를 입력해주세요.">
+                <input  class="search" type="text" name="searchKeyword" placeholder="검색어를 입력해주세요.">
                 <button type="submit"  class="btn btn-primary">검색</button>
             </div>
         </div>
@@ -112,14 +91,17 @@
 
     </form>
 
+
+
+
     <div class="container">
         <table class="table community-table table-hover talbe-padding center">
             <thead>
             <tr>
                 <th scope="col">순번</th>
                 <th scope="col">제목</th>
-                 <th scope="col">작성자</th>
-<!--                 <th scope="col">등록일</th>-->
+                <th scope="col">작성자</th>
+                <!-- <th scope="col">등록일</th> -->
                 <!-- <th scope="col">조회수</th> -->
             </tr>
             </thead>
@@ -129,74 +111,40 @@
                 <td th:text="${board.id}">1</td>
 
                 <td>
-                    <a th:text= "${board.title}" th:href="@{/board/view(id=${board.id})}">제목입니다.</a>
+                    <a th:text= "${board.title}"  th:href="@{/board/view(id=${board.id})}">제목입니다.</a>
+                    <!--th:href="@{/board/view(id=${board.id})} -->
                 </td>
 
                 <td>
-                    <a th:text= "${board.writer}"</a>
+                    <a th:text= "${board.writer}"></a>
                 </td>
+
 
             </tr>
             </tbody>
-
-
-
         </table>
 
-        <!--
-<nav aria-label="Page navigation example">
-          <ul class="pagination center">
-            <li class="page-item ">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
 
-        </nav>
-      -->
-
-
-
-        <!--
-          <div class="write">
-            <a href="community-write"><button  type="button" class="btn btn-primary">글쓰기</button></a>
-          </div>
-        -->
-        <th:block th:each="page : ${#numbers.sequence(startPage, endPage)}">
+        <th:block  class="list-order" th:each="page : ${#numbers.sequence(startPage, endPage)}">
             <a th:if="${page != nowPage}" th:href="@{/board/list(page = ${page - 1}, searchKeyword = ${param.searchKeyword})}" th:text="${page}"></a>
             <strong th:if="${page == nowPage}" th:text="${page}" style="color : red"></strong>
         </th:block>
+
+
+
         <div class="write">
             <a href="write"><button  type="button" class="btn btn-primary">글쓰기</button></a>
         </div>
+
     </div>
+
 </section>
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

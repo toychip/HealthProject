@@ -3,16 +3,14 @@ package com.example.demo.board.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 
 // JPA가 entity를 보고 읽어드림. board table의 관한 설정인걸 인지. 처리해줌
 @Entity
 @Data // 이럴때 필요한게 lombok 컨트롤러의 매개변수 대신 클래스를 보내준 후, 함수 속에서 get.~를 쓸 수 있음
+@Table(name = "boardfree")
 public class Board {
 
     @Id // Primary Key를 의미

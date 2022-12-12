@@ -18,10 +18,10 @@ public class BoardService {
     @Autowired
     private BoardRepository boardRepository;
 
-    // private BoardRepository boardRepository = new boardrepository;
+    // private BoardfreeRepository boardRepository = new boardrepository;
     // interface라서 객체를 생성할수 없지만
     // Autowired를 사용하면 springbean이 알아서 읽어와서
-    // private BoardRepository boardRepository; 에 주입을 해줌 이를 dependency Injection이라고 함
+    // private BoardfreeRepository boardRepository; 에 주입을 해줌 이를 dependency Injection이라고 함
 
 
     public void write(Board board, MultipartFile file) throws Exception{

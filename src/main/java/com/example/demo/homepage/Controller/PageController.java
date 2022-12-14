@@ -16,6 +16,11 @@ public class PageController {
         return "beginner-main-afterlogin";
     }
 
+    @GetMapping(value = "board/master-main")
+    public String Login_mastermain_to_board(){
+        return "master-main-afterlogin";
+    }
+
     @GetMapping(value = "board/mypage")
     public String Login_board_to_mypage(){
         return "mypage";

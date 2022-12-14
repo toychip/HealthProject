@@ -207,5 +207,12 @@ left:3px;
 .list-order{
     display: flex;
     justify-content: center;
+    margin-left:150px;
     margin-top: 30px;
+}
+.board_check a{
+justify-content: right;
+text-decoration:none;
+color: black;
+
 }
